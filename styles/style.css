@@ -1,0 +1,25 @@
+/* Custome Properties */
+:root {
+  /* colors */
+  --primary-clr: #1a2236;
+  --secondary-clr: #fff;
+
+  /* fonts */
+  --ff-headings: 'Playfair Display', serif;
+  --ff-normal: 'Poppins', sans-serif;
+
+  /* font-size */
+  --fs-50: 3.125rem;
+  --fs-16: 1rem;
+  --fs-14: 0.875rem;
+
+  /* font-weights */
+  --fs-500: 500;
+  --fs-400: 400;
+}
+
+/* Resets */
+
+/* Typography */
+
+/* Mobiles Styles */
