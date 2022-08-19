@@ -19,6 +19,21 @@
 }
 
 /* Resets */
+* {
+  box-sizing: border-box;
+  font: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  text-rendering: optimizeSpeed;
+}
 
 /* Typography */
 
