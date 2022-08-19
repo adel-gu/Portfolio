@@ -29,12 +29,25 @@
 html,
 body {
   height: 100%;
-}
-
-body {
   text-rendering: optimizeSpeed;
 }
 
 /* Typography */
+body {
+  color: var(--primary-clr);
+  font-family: var(--ff-normal);
+  font-size: var(--fs-14);
+  font-weight: var(--fw-400);
+}
+
+h1 {
+  font-family: var(--ff-headings);
+  font-size: var(--fs-50);
+}
+
+button {
+  font-size: var(--fs-16);
+  font-weight: var(--fw-500);
+}
 
 /* Mobiles Styles */
