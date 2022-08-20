@@ -59,8 +59,12 @@ button {
   background: url("../assets/images/image_geometry_1.svg") no-repeat;
 }
 
-.header {
+.section {
   display: flex;
+  padding-inline: 1em;
+}
+
+.header-section {
   justify-content: flex-end;
 }
 
