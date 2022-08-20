@@ -32,6 +32,10 @@ body {
   text-rendering: optimizeSpeed;
 }
 
+img {
+  display: block;
+}
+
 /* Typography */
 body {
   color: var(--primary-clr);
@@ -51,3 +55,20 @@ button {
 }
 
 /* Mobiles Styles */
+.bg-decoration {
+  background: url("../assets/images/image_geometry_1.svg") no-repeat;
+}
+
+.header {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.menu {
+  background: none;
+  border: none;
+  height: fit-content;
+  margin-top: 1.1875em;
+}
+
+/* Hovers and Interactions */
