@@ -41,6 +41,10 @@ img {
   width: 100%;
 }
 
+li {
+  list-style-type: none;
+}
+
 /* Typography */
 body {
   color: var(--primary-clr);
