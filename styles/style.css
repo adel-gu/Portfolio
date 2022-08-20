@@ -113,3 +113,23 @@ button {
 }
 
 /* Hovers and Interactions */
+.menu,
+.cta-button {
+  transition: background 200ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.menu:hover,
+.cta-button:hover {
+  cursor: pointer;
+}
+
+.cta-button:hover {
+  background: none;
+  color: var(--primary-clr);
+}
+
+.cta-button:focus {
+  background: none;
+  border-width: 2px;
+  color: var(--primary-clr);
+}
