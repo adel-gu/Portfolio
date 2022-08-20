@@ -41,6 +41,11 @@ img {
   width: 100%;
 }
 
+button img {
+  display: inline;
+  width: auto;
+}
+
 li {
   list-style-type: none;
 }
@@ -77,10 +82,13 @@ button {
   background: none;
   border-color: var(--secondary-clr);
   padding: 0.625em;
+  width: 178px;
+}
+
+.secondary-btn-icon {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 178px;
 }
 
 .primary-heading {
@@ -98,7 +106,6 @@ button {
 
 .paragraph {
   margin: 1.25em 0 2.5em 0;
-  width: max(445px, 100%);
   line-height: 21px;
 }
 
@@ -155,10 +162,6 @@ button {
   max-width: 183px;
 }
 
-.hero-img {
-  width: 100%;
-}
-
 /* Project Section */
 .project-section {
   padding-top: 2.5em;
@@ -174,9 +177,15 @@ button {
   padding-block: 1.5em;
 }
 
-.secondary-btn img {
-  display: inline;
-  width: auto;
+/* About Section */
+.about-section {
+  padding-top: 3.5em;
+  padding-bottom: 2.5em;
+}
+
+.cv-btn {
+  justify-content: center;
+  gap: 1.25em;
 }
 
 /* Hovers and Interactions */
