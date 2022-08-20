@@ -96,7 +96,6 @@ button {
 
 .hero-content p {
   margin: 1.25em 0 2.5em 0;
-  width: max(445px, 100%);
   line-height: 21px;
 }
 
