@@ -3,6 +3,7 @@
   /* colors */
   --primary-clr: #1a2236;
   --secondary-clr: #fff;
+  --accent-clr: #98dede;
 
   /* fonts */
   --ff-headings: 'Playfair Display', serif;
@@ -10,6 +11,7 @@
 
   /* font-size */
   --fs-50: 3.125rem;
+  --fs-20: 1.25rem;
   --fs-16: 1rem;
   --fs-14: 0.875rem;
   --fs-10: 0.625rem;
@@ -68,9 +70,13 @@ button {
 }
 
 .secondary-btn {
+  background: none;
   border-color: var(--secondary-clr);
   padding: 0.625em;
-  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 178px;
 }
 
 .primary-heading {
@@ -81,7 +87,7 @@ button {
 
 .secondary-heading {
   color: var(--secondary-clr);
-  font-size: var(--fs-50);
+  font-size: var(--fs-20);
   font-weight: var(--fw-300);
   line-height: 80%;
 }
@@ -97,6 +103,14 @@ button {
   font-weight: var(--fw-300);
   line-height: 80%;
   padding: 0.375em 0.625em;
+  background: var(--accent-clr);
+}
+
+.features-container {
+  display: flex;
+  gap: 0.625em;
+  padding-top: 1em;
+  padding-bottom: 1.25em;
 }
 
 /* Mobiles Styles */
@@ -141,9 +155,28 @@ button {
   width: 100%;
 }
 
+/* Project Section */
+.project-section {
+  padding-top: 2.5em;
+}
+
+.project-item {
+  padding-top: 2em;
+}
+
+.project-details {
+  background: var(--primary-clr);
+  padding-block: 1.25em;
+}
+
+.secondary-btn img {
+  display: inline;
+  width: auto;
+}
+
 /* Hovers and Interactions */
 .menu:hover,
-.primary-btn:hover {
+.btn:hover {
   cursor: pointer;
 }
 
