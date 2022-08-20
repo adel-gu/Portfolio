@@ -75,4 +75,9 @@ button {
   margin-top: 1.1875em;
 }
 
+.hero-section {
+  flex-direction: column;
+  padding-top: 4.5em;
+}
+
 /* Hovers and Interactions */
