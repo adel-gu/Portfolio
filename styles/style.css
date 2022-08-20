@@ -3,6 +3,7 @@
   /* colors */
   --primary-clr: #1a2236;
   --secondary-clr: #fff;
+  --accent-clr: #98dede;
 
   /* fonts */
   --ff-headings: 'Playfair Display', serif;
@@ -10,12 +11,15 @@
 
   /* font-size */
   --fs-50: 3.125rem;
+  --fs-20: 1.25rem;
   --fs-16: 1rem;
   --fs-14: 0.875rem;
+  --fs-10: 0.625rem;
 
   /* font-weights */
-  --fs-500: 500;
-  --fs-400: 400;
+  --fw-500: 500;
+  --fw-400: 400;
+  --fw-300: 300;
 }
 
 /* Resets */
@@ -37,6 +41,15 @@ img {
   width: 100%;
 }
 
+button img {
+  display: inline;
+  width: auto;
+}
+
+li {
+  list-style-type: none;
+}
+
 /* Typography */
 body {
   color: var(--primary-clr);
@@ -45,14 +58,70 @@ body {
   font-weight: var(--fw-400);
 }
 
-h1 {
-  font-family: var(--ff-headings);
-  font-size: var(--fs-50);
-}
-
 button {
   font-size: var(--fs-16);
   font-weight: var(--fw-500);
+}
+
+/* Utility clasess */
+.btn {
+  border-style: solid;
+  border-width: 1px;
+  color: var(--secondary-clr);
+}
+
+.primary-btn {
+  background: var(--primary-clr);
+  border-color: var(--primary-clr);
+  transition: background 200ms cubic-bezier(0.075, 0.82, 0.165, 1);
+  padding-block: 0.75em;
+  width: 100%;
+}
+
+.secondary-btn {
+  background: none;
+  border-color: var(--secondary-clr);
+  padding: 0.625em;
+  width: 178px;
+}
+
+.secondary-btn-icon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.primary-heading {
+  font-family: var(--ff-headings);
+  font-size: var(--fs-50);
+  line-height: 50px;
+}
+
+.secondary-heading {
+  color: var(--secondary-clr);
+  font-size: var(--fs-20);
+  font-weight: var(--fw-300);
+  line-height: 80%;
+}
+
+.paragraph {
+  margin: 1.25em 0 2.5em 0;
+  line-height: 21px;
+}
+
+.features-container {
+  display: flex;
+  gap: 0.625em;
+  padding-top: 1em;
+  padding-bottom: 1.25em;
+}
+
+.feature {
+  font-size: var(--fs-14);
+  font-weight: var(--fw-300);
+  line-height: 80%;
+  padding: 0.375em 0.625em;
+  background: var(--accent-clr);
 }
 
 /* Mobiles Styles */
@@ -91,43 +160,46 @@ button {
 
 .hero-content h1 {
   max-width: 183px;
-  line-height: 50px;
 }
 
-.hero-content p {
-  margin: 1.25em 0 2.5em 0;
-  line-height: 21px;
+/* Project Section */
+.project-section {
+  padding-top: 2.5em;
 }
 
-.cta-button {
+.projects-grid {
+  padding-top: 2em;
+  display: grid;
+}
+
+.project-details {
   background: var(--primary-clr);
-  border: 1px solid var(--primary-clr);
-  color: var(--secondary-clr);
-  padding-block: 0.75em;
-  width: 100%;
+  padding-block: 1.5em;
 }
 
-.hero-img {
-  width: 100%;
+/* About Section */
+.about-section {
+  padding-top: 3.5em;
+  padding-bottom: 2.5em;
+}
+
+.cv-btn {
+  justify-content: center;
+  gap: 1.25em;
 }
 
 /* Hovers and Interactions */
-.menu,
-.cta-button {
-  transition: background 200ms cubic-bezier(0.075, 0.82, 0.165, 1);
-}
-
 .menu:hover,
-.cta-button:hover {
+.btn:hover {
   cursor: pointer;
 }
 
-.cta-button:hover {
+.primary-btn:hover {
   background: none;
   color: var(--primary-clr);
 }
 
-.cta-button:focus {
+.primary-btn:focus {
   background: none;
   border-width: 2px;
   color: var(--primary-clr);
