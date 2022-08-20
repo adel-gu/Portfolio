@@ -12,10 +12,12 @@
   --fs-50: 3.125rem;
   --fs-16: 1rem;
   --fs-14: 0.875rem;
+  --fs-10: 0.625rem;
 
   /* font-weights */
-  --fs-500: 500;
-  --fs-400: 400;
+  --fw-500: 500;
+  --fw-400: 400;
+  --fw-300: 300;
 }
 
 /* Resets */
@@ -45,14 +47,56 @@ body {
   font-weight: var(--fw-400);
 }
 
-h1 {
-  font-family: var(--ff-headings);
-  font-size: var(--fs-50);
-}
-
 button {
   font-size: var(--fs-16);
   font-weight: var(--fw-500);
+}
+
+/* Utility clasess */
+.btn {
+  border-style: solid;
+  border-width: 1px;
+  color: var(--secondary-clr);
+}
+
+.primary-btn {
+  background: var(--primary-clr);
+  border-color: var(--primary-clr);
+  transition: background 200ms cubic-bezier(0.075, 0.82, 0.165, 1);
+  padding-block: 0.75em;
+  width: 100%;
+}
+
+.secondary-btn {
+  border-color: var(--secondary-clr);
+  padding: 0.625em;
+  width: 60%;
+}
+
+.primary-heading {
+  font-family: var(--ff-headings);
+  font-size: var(--fs-50);
+  line-height: 50px;
+}
+
+.secondary-heading {
+  color: var(--secondary-clr);
+  font-size: var(--fs-50);
+  font-weight: var(--fw-300);
+  line-height: 80%;
+}
+
+.paragraph {
+  margin: 1.25em 0 2.5em 0;
+  width: max(445px, 100%);
+  line-height: 21px;
+}
+
+.feature {
+  font-size: var(--fs-10);
+  font-weight: var(--fw-300);
+  line-height: 80%;
+  padding: 0.375em 0.625em;
 }
 
 /* Mobiles Styles */
@@ -91,21 +135,6 @@ button {
 
 .hero-content h1 {
   max-width: 183px;
-  line-height: 50px;
-}
-
-.hero-content p {
-  margin: 1.25em 0 2.5em 0;
-  width: max(445px, 100%);
-  line-height: 21px;
-}
-
-.cta-button {
-  background: var(--primary-clr);
-  border: 1px solid var(--primary-clr);
-  color: var(--secondary-clr);
-  padding-block: 0.75em;
-  width: 100%;
 }
 
 .hero-img {
@@ -113,22 +142,17 @@ button {
 }
 
 /* Hovers and Interactions */
-.menu,
-.cta-button {
-  transition: background 200ms cubic-bezier(0.075, 0.82, 0.165, 1);
-}
-
 .menu:hover,
-.cta-button:hover {
+.primary-btn:hover {
   cursor: pointer;
 }
 
-.cta-button:hover {
+.primary-btn:hover {
   background: none;
   color: var(--primary-clr);
 }
 
-.cta-button:focus {
+.primary-btn:focus {
   background: none;
   border-width: 2px;
   color: var(--primary-clr);
