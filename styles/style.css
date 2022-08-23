@@ -4,6 +4,9 @@
   --primary-clr: #1a2236;
   --secondary-clr: #fff;
   --accent-clr: #98dede;
+  --bg-blue: #1c528a;
+  --bg-red: #e2505c;
+  --bg-yellow: #febf52;
 
   /* fonts */
   --ff-headings: 'Playfair Display', serif;
@@ -13,10 +16,13 @@
   --fs-50: 3.125rem;
   --fs-20: 1.25rem;
   --fs-16: 1rem;
+  --fs-18: 1.125rem;
   --fs-14: 0.875rem;
   --fs-10: 0.625rem;
 
   /* font-weights */
+  --fw-800: 800;
+  --fw-600: 600;
   --fw-500: 500;
   --fw-400: 400;
   --fw-300: 300;
@@ -104,6 +110,13 @@ button {
   line-height: 80%;
 }
 
+.accent-heading {
+  color: var(--secondary-clr);
+  font-size: var(--fs-20);
+  font-weight: var(--fw-800);
+  line-height: 30px;
+}
+
 .paragraph {
   margin: 1.25em 0 2.5em 0;
   line-height: 21px;
@@ -186,6 +199,35 @@ button {
 .cv-btn {
   justify-content: center;
   gap: 1.25em;
+}
+
+.skills-container {
+  padding-top: 1.625em;
+}
+
+.skill-item {
+  margin-top: 1em;
+  padding: 3.125em 0 3.125em 3.125em;
+}
+
+.skill-item_list {
+  padding-top: 1.25em;
+  padding-left: 3.125em;
+}
+
+.blue-skill {
+  background-image: url("../assets/about-section/hash.svg");
+  background-color: var(--bg-blue);
+  background-position: right bottom;
+  background-repeat: no-repeat;
+}
+
+.skill {
+  list-style-type: disc;
+  color: var(--secondary-clr);
+  font-weight: var(--fw-600);
+  font-size: var(--fs-18);
+  line-height: 27px;
 }
 
 /* Hovers and Interactions */
