@@ -222,6 +222,20 @@ button {
   background-repeat: no-repeat;
 }
 
+.red-skill {
+  background-image: url("../assets/about-section/ic_framework.svg");
+  background-color: var(--bg-red);
+  background-position: right bottom;
+  background-repeat: no-repeat;
+}
+
+.yellow-skill {
+  background-image: url("../assets/about-section/ic_skills.svg");
+  background-color: var(--bg-yellow);
+  background-position: right bottom;
+  background-repeat: no-repeat;
+}
+
 .skill {
   list-style-type: disc;
   color: var(--secondary-clr);
