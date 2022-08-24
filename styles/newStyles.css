@@ -4,11 +4,18 @@
   --primary-clr: #1a2236;
   --secondary-clr: #fff;
   --accent-clr: #98dede;
-  --accent-secondary-clr: #92dcdc;
+
+  /* Backgrounds */
   --bg-blue: #1c528a;
   --bg-red: #e2505c;
   --bg-yellow: #febf52;
-  --bg-ghost-white: #fafaf9;
+  --bg-footer: #f9f9fa;
+
+  /* Borders */
+  --br-normal: #dfdfe0;
+
+  /* Form, Inputs */
+  --label-clr: #7d7c84;
 
   /* fonts */
   --ff-headings: 'Playfair Display', serif;
@@ -52,4 +59,12 @@ img {
 
 button img {
   width: auto;
+}
+
+/* !!! Typography Style */
+body {
+  color: var(--primary-clr);
+  font-family: var(--ff-normal);
+  font-size: var(--fs-14);
+  font-weight: var(--fw-400);
 }
