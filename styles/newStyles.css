@@ -4,9 +4,11 @@
   --primary-clr: #1a2236;
   --secondary-clr: #fff;
   --accent-clr: #98dede;
+  --accent-secondary-clr: #92dcdc;
   --bg-blue: #1c528a;
   --bg-red: #e2505c;
   --bg-yellow: #febf52;
+  --bg-ghost-white: #fafaf9;
 
   /* fonts */
   --ff-headings: 'Playfair Display', serif;
