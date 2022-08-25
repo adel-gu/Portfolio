@@ -1,8 +1,8 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Hello Microverse
+# Portfolio
 
-> This Repository satisfies the project requirements from Microverse project from Module_1 in Week_1 of Day_3
+> This Repository is about building personal protfolio website.
 
 ## Built With
 
