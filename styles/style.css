@@ -264,7 +264,9 @@ button {
 /* Pair Programing */
 input,
 textarea {
+  border-style: solid;
   background-color: #fff;
+  border-radius: 4px;
   color: var(--primary-clr);
   font-weight: var(--fw-400);
   font-size: var(--fs-14);
@@ -279,12 +281,27 @@ textarea::placeholder {
 
 input {
   border: 1px solid #dfdfe0;
-  border-radius: 4px;
   padding-bottom: 0.5em;
-  padding-top: 1.5em;
+  padding-top: 2em;
 }
+
 textarea {
   padding-top: 1em;
+  margin-bottom: 1.25em;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: var(--primary-clr);
+}
+
+#contact {
+  background-color: #f9f9fa;
+  background-image: url("../assets/images/image_geometry_1.svg");
+  background-position: left top;
+  background-repeat: no-repeat;
+  padding-top: 6.625em;
 }
 
 .social-links {
@@ -318,4 +335,19 @@ textarea {
 
 .get-resume-link img {
   margin-left: 0.5em;
+}
+
+.input-item {
+  position: relative;
+}
+
+.input-item:nth-child(2) {
+  margin-block: 0.9em;
+}
+
+.input-item label {
+  color: #7d7c84;
+  position: absolute;
+  left: 1em;
+  top: 0.25em;
 }
