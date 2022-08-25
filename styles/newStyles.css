@@ -68,3 +68,23 @@ body {
   font-size: var(--fs-14);
   font-weight: var(--fw-400);
 }
+
+h1,
+h2 {
+  color: var(--primary-clr);
+  font-family: var(--ff-headings);
+  font-size: var(--fs-50);
+  font-weight: var(--fw-400);
+}
+
+h3 {
+  color: var(--secondary-clr);
+  font-size: var(--fs-20);
+  font-weight: var(--fw-300);
+}
+
+button {
+  color: var(--secondary-clr);
+  font-size: var(--fs-16);
+  font-family: var(--fw-500);
+}
