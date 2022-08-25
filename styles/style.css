@@ -9,8 +9,8 @@
   --bg-yellow: #febf52;
 
   /* fonts */
-  --ff-headings: 'Playfair Display', serif;
-  --ff-normal: 'Poppins', sans-serif;
+  --ff-headings: "Playfair Display", serif;
+  --ff-normal: "Poppins", sans-serif;
 
   /* font-size */
   --fs-50: 3.125rem;
@@ -262,6 +262,31 @@ button {
 }
 
 /* Pair Programing */
+input,
+textarea {
+  background-color: #fff;
+  color: var(--primary-clr);
+  font-weight: var(--fw-400);
+  font-size: var(--fs-14);
+  padding-left: 1em;
+  width: 100%;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #7d7c84;
+}
+
+input {
+  border: 1px solid #dfdfe0;
+  border-radius: 4px;
+  padding-bottom: 0.5em;
+  padding-top: 1.5em;
+}
+textarea {
+  padding-top: 1em;
+}
+
 .social-links {
   background: var(--bg-blue);
   margin-top: 4em;
