@@ -302,6 +302,8 @@ textarea:focus {
   background-position: left top;
   background-repeat: no-repeat;
   padding-top: 6.625em;
+  display: flex;
+  flex-direction: column;
 }
 
 .social-links {
