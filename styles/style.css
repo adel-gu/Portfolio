@@ -307,7 +307,7 @@ textarea:focus {
 }
 
 .social-links {
-  background: var(--bg-blue);
+  background: var(--primary-clr);
   margin-top: 4em;
   padding-top: 2em;
 }
