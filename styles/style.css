@@ -220,6 +220,8 @@ label {
 
 /* Footer Section */
 .footer-section {
+  background-color: var(--bg-footer);
+  margin-top: 3.125em;
   padding-bottom: 0;
 }
 
