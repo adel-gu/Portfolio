@@ -41,6 +41,7 @@
 * {
   box-sizing: border-box;
   font: inherit;
+  line-height: 1.5;
   padding: 0;
   margin: 0;
 }
@@ -75,6 +76,7 @@ h2 {
   font-family: var(--ff-headings);
   font-size: var(--fs-50);
   font-weight: var(--fw-400);
+  margin-bottom: 0.25em;
 }
 
 h3 {
@@ -83,8 +85,147 @@ h3 {
   font-weight: var(--fw-300);
 }
 
+h4 {
+  color: var(--secondary-clr);
+  font-size: var(--fs-20);
+  font-weight: var(--fw-800);
+}
+
 button {
   color: var(--secondary-clr);
   font-size: var(--fs-16);
   font-family: var(--fw-500);
+  border-width: 1px;
+  border-style: solid;
 }
+
+/* !!! Mobile Style */
+.bg-decoration {
+  background: url("../assets/images/image_geometry_1.svg") no-repeat left top;
+}
+
+/* Display's */
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+}
+
+/* Sections */
+.section {
+  padding-block: 1.875em;
+}
+
+/* Container */
+.container {
+  padding-inline: 1em;
+}
+
+/* Header section Styles */
+.header-section {
+  justify-content: flex-end;
+  padding-top: 1.25em;
+}
+
+/* Hero section Styles */
+.hero-section {
+  padding-top: 4.375em;
+  flex-direction: column;
+  gap: 2em;
+}
+
+/* Projects section Styles */
+.project-item {
+  flex-direction: column;
+}
+
+.project-details {
+  background: var(--primary-clr);
+  padding-block: 1.25em;
+}
+
+.features-container {
+  display: flex;
+  gap: 0.5em;
+  padding: 1em 0 1.25em 0;
+}
+
+.feature {
+  background: var(--accent-clr);
+  padding: 0.375em 0.625em;
+}
+
+/* About Section */
+.about-container {
+  flex-direction: column;
+  gap: 2.5em;
+}
+
+.skills-list {
+  row-gap: 1em;
+  color: var(--secondary-clr);
+  font-size: var(--fs-18);
+  font-weight: var(--fw-600);
+}
+
+.skill-item {
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+
+.blue-skill {
+  background-color: var(--bg-blue);
+  background-image: url("../assets/about-section/hash.svg");
+  padding: 3.125em;
+}
+
+.red-skill {
+  background-color: var(--bg-red);
+  background-image: url("../assets/about-section/ic_framework.svg");
+  padding: 3.125em;
+}
+
+.yellow-skill {
+  background-color: var(--bg-yellow);
+  background-image: url("../assets/about-section/ic_skills.svg");
+  padding: 3.125em;
+}
+
+.skill-item_list {
+  margin-top: 1em;
+  margin-left: 1.25em;
+}
+
+/* Text contents */
+.paragraph {
+  margin-bottom: 2em;
+}
+
+/* Buttons */
+.menu {
+  background: none;
+  border: none;
+}
+
+.btn {
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+}
+
+.primary-btn {
+  background: var(--primary-clr);
+  border-color: var(--primary-clr);
+  padding-block: 0.75em;
+  width: 100%;
+}
+
+.secondary-btn {
+  background: none;
+  border-color: var(--secondary-clr);
+  padding: 0.625em;
+}
+
+/* Links */
