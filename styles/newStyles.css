@@ -16,6 +16,7 @@
 
   /* Form, Inputs */
   --label-clr: #7d7c84;
+  --placeholder-clr: #7d7c84;
 
   /* fonts */
   --ff-headings: 'Playfair Display', serif;
@@ -58,8 +59,18 @@ img {
   width: 100%;
 }
 
-button img {
+button img,
+a img {
   width: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+input,
+textarea {
+  width: 100%;
 }
 
 /* !!! Typography Style */
@@ -99,6 +110,19 @@ button {
   border-style: solid;
 }
 
+input::placeholder,
+textarea::placeholder {
+  color: var(--placeholder-clr);
+  font-size: var(--fs-14);
+  font-weight: var(--fw-400);
+}
+
+label {
+  color: var(--label-clr);
+  font-size: var(--fs-10);
+  font-weight: var(--fw-400);
+}
+
 /* !!! Mobile Style */
 .bg-decoration {
   background: url("../assets/images/image_geometry_1.svg") no-repeat left top;
@@ -111,6 +135,10 @@ button {
 
 .grid {
   display: grid;
+}
+
+.direction {
+  flex-direction: column;
 }
 
 /* Sections */
@@ -132,22 +160,16 @@ button {
 /* Hero section Styles */
 .hero-section {
   padding-top: 4.375em;
-  flex-direction: column;
   gap: 2em;
 }
 
 /* Projects section Styles */
-.project-item {
-  flex-direction: column;
-}
-
 .project-details {
   background: var(--primary-clr);
   padding-block: 1.25em;
 }
 
 .features-container {
-  display: flex;
   gap: 0.5em;
   padding: 1em 0 1.25em 0;
 }
@@ -159,7 +181,6 @@ button {
 
 /* About Section */
 .about-container {
-  flex-direction: column;
   gap: 2.5em;
 }
 
@@ -198,7 +219,42 @@ button {
   margin-left: 1.25em;
 }
 
-/* Text contents */
+/* Footer Section */
+.footer-section {
+  padding-bottom: 0;
+}
+
+.top-footer-container {
+  padding-top: 6.25em;
+  padding-bottom: 3.75em;
+}
+
+.inputs-lists {
+  gap: 0.625em;
+}
+
+.input-item {
+  position: relative;
+}
+
+.input-label {
+  position: absolute;
+  top: 0.5em;
+  left: 1.5em;
+}
+
+.bottom-footer-container {
+  background: var(--primary-clr);
+  padding-top: 1.875em;
+  padding-bottom: 2.5em;
+  gap: 1.875em;
+}
+
+.social-links-list {
+  justify-content: space-between;
+}
+
+/* Text contents Latout */
 .paragraph {
   margin-bottom: 2em;
 }
@@ -228,4 +284,35 @@ button {
   padding: 0.625em;
 }
 
+/* Inputs */
+.input {
+  background: var(--secondary-clr);
+  border: 2px solid var(--br-normal);
+  border-radius: 4px;
+  padding: 1.5em 0 0.5em 1em;
+}
+
 /* Links */
+.link {
+  color: var(--accent-clr);
+  font-size: var(--fs-16);
+  font-weight: var(--fw-500);
+  gap: 0.5em;
+}
+
+/* Interactions */
+.menu:hover,
+.btn:hover {
+  cursor: pointer;
+}
+
+.primary-btn:hover,
+.primary-btn:focus {
+  background: none;
+  color: var(--primary-clr);
+}
+
+.input:focus {
+  outline: none;
+  border-color: var(--primary-clr);
+}
