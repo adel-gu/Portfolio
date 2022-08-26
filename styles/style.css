@@ -110,8 +110,7 @@ button {
   border-style: solid;
 }
 
-input::placeholder,
-textarea::placeholder {
+.input::placeholder {
   color: var(--placeholder-clr);
   font-size: var(--fs-14);
   font-weight: var(--fw-400);
