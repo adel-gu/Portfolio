@@ -1,9 +1,8 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Hello Microverse
+# Portfolio
 
-> This Repository satisfies the project requirements from Microverse project from Module_1 in Week_1 of Day_3
-
+> This Repository is about building personal protfolio website.
 
 ## Built With
 
@@ -16,6 +15,11 @@
 - GitHub: [@adel-gu](https://github.com/adel-gu)
 - Twitter: [@GuitounAdel](https://twitter.com/@GuitounAdel)
 - LinkedIn: [adelguitoun](https://linkedin.com/in/adelguitoun)
+
+👤 **Letaru Linda Masia**
+
+- GitHub: https://github.com/letarulinda
+- LinkedIn: www.linkedin.com/in/linda-letaru-masia-7b48a9175
 
 ## Show your support
 
