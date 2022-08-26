@@ -26,7 +26,7 @@
     </header>
     <main>
       <!-- Hero Section -->
-      <section class="section hero-section flex">
+      <section class="section hero-section flex direction">
         <div class="container">
           <div class="hero-content">
             <h1>Adel Guitoun</h1>
@@ -46,6 +46,7 @@
           />
         </div>
       </section>
+
       <!-- Project Section -->
       <section class="section project-section">
         <div class="container">
@@ -53,7 +54,7 @@
         </div>
         <!-- Project List -->
         <ul role="list" class="projects-lists grid">
-          <li class="project-item flex">
+          <li class="project-item flex direction">
             <div class="project-img">
               <img
                 src="./assets/images/projects-section/project1.png"
@@ -62,7 +63,7 @@
             </div>
             <div class="container project-details">
               <h3>Project name goes here</h3>
-              <ul role="list" class="features-container">
+              <ul role="list" class="features-container flex">
                 <li class="feature">HTML/CSS</li>
                 <li class="feature">Ruby on Rails</li>
                 <li class="feature">JavaScript</li>
@@ -77,7 +78,7 @@
             </div>
           </li>
 
-          <li class="project-item flex">
+          <li class="project-item flex direction">
             <div class="project-img">
               <img
                 src="./assets/images/projects-section/project2.png"
@@ -86,7 +87,7 @@
             </div>
             <div class="container project-details">
               <h3>Project name goes here</h3>
-              <ul role="list" class="features-container">
+              <ul role="list" class="features-container flex">
                 <li class="feature">HTML/CSS</li>
                 <li class="feature">Ruby on Rails</li>
                 <li class="feature">JavaScript</li>
@@ -101,7 +102,7 @@
             </div>
           </li>
 
-          <li class="project-item flex">
+          <li class="project-item flex direction">
             <div class="project-img">
               <img
                 src="./assets/images/projects-section/project3.png"
@@ -110,7 +111,7 @@
             </div>
             <div class="container project-details">
               <h3>Project name goes here</h3>
-              <ul role="list" class="features-container">
+              <ul role="list" class="features-container flex">
                 <li class="feature">HTML/CSS</li>
                 <li class="feature">Ruby on Rails</li>
                 <li class="feature">JavaScript</li>
@@ -125,7 +126,7 @@
             </div>
           </li>
 
-          <li class="project-item flex">
+          <li class="project-item flex direction">
             <div class="project-img">
               <img
                 src="./assets/images/projects-section/project4.png"
@@ -134,7 +135,7 @@
             </div>
             <div class="container project-details">
               <h3>Project name goes here</h3>
-              <ul role="list" class="features-container">
+              <ul role="list" class="features-container flex">
                 <li class="feature">HTML/CSS</li>
                 <li class="feature">Ruby on Rails</li>
                 <li class="feature">JavaScript</li>
@@ -149,7 +150,7 @@
             </div>
           </li>
 
-          <li class="project-item flex">
+          <li class="project-item flex direction">
             <div class="project-img">
               <img
                 src="./assets/images/projects-section/project5.png"
@@ -158,7 +159,7 @@
             </div>
             <div class="container project-details">
               <h3>Project name goes here</h3>
-              <ul role="list" class="features-container">
+              <ul role="list" class="features-container flex">
                 <li class="feature">HTML/CSS</li>
                 <li class="feature">Ruby on Rails</li>
                 <li class="feature">JavaScript</li>
@@ -173,7 +174,7 @@
             </div>
           </li>
 
-          <li class="project-item flex">
+          <li class="project-item flex direction">
             <div class="project-img">
               <img
                 src="./assets/images/projects-section/project6.png"
@@ -182,7 +183,7 @@
             </div>
             <div class="container project-details">
               <h3>Project name goes here</h3>
-              <ul role="list" class="features-container">
+              <ul role="list" class="features-container flex">
                 <li class="feature">HTML/CSS</li>
                 <li class="feature">Ruby on Rails</li>
                 <li class="feature">JavaScript</li>
@@ -199,8 +200,8 @@
         </ul>
       </section>
       <!-- About Section -->
-      <section class="section">
-        <div class="container about-container flex">
+      <section class="section about-section">
+        <div class="container about-container flex direction">
           <div class="about-content">
             <h2 class="primary-heading">About</h2>
             <p class="paragraph">
@@ -249,6 +250,129 @@
           </div>
         </div>
       </section>
+
+      <!-- Footer Section -->
+      <footer class="section footer-section bg-decoration">
+        <div class="container">
+          <div class="top-footer-container flex direction">
+            <div class="contact-content">
+              <h2 class="primary-heading">Get started</h2>
+              <p class="paragraph">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna.
+              </p>
+            </div>
+            <form
+              class="form"
+              action="https://formspree.io/f/xayknoyj"
+              method="post"
+            >
+              <ul role="list" class="inputs-lists flex direction">
+                <li class="input-item">
+                  <label class="input-label" for="user-name">Your name</label>
+                  <input
+                    class="input"
+                    name="name"
+                    type="text"
+                    id="user-name"
+                    placeholder="Please enter you name here..."
+                    maxlength="30"
+                    required
+                  />
+                </li>
+                <li class="input-item">
+                  <label class="input-label" for="user-email">Your email</label>
+                  <input
+                    class="input"
+                    name="email"
+                    id="user-email"
+                    type="email"
+                    placeholder="Please enter you email here..."
+                    required
+                  />
+                </li>
+                <li>
+                  <textarea
+                    class="input"
+                    name="message"
+                    cols="30"
+                    rows="10"
+                    maxlength="500"
+                    placeholder="Enter your message here..."
+                    required
+                  ></textarea>
+                </li>
+                <li class="submit-btn-container">
+                  <button class="btn primary-btn" type="submit">
+                    Get in Touch
+                  </button>
+                </li>
+              </ul>
+            </form>
+          </div>
+        </div>
+        <div class="container bottom-footer-container flex direction">
+          <a class="link flex" href="#">
+            <span>Get my Resume</span>
+            <img
+              src="./assets/footer-section/ic-get-cv.svg"
+              alt="ic_stackoverflow"
+            />
+          </a>
+          <ul role="list" class="social-links-list flex">
+            <li class="social-link-item">
+              <a href="https://stackoverflow.com/users/19077324/adel-guitoun">
+                <img
+                  src="./assets/footer-section/ic_stackoverflow.svg"
+                  alt="github"
+                />
+              </a>
+            </li>
+
+            <li class="social-link-item">
+              <a href="https://github.com/adel-gu">
+                <img
+                  src="./assets/footer-section/ic-github.svg"
+                  alt="Twitter"
+                />
+              </a>
+            </li>
+
+            <li class="social-link-item">
+              <a href="https://linkedin.com/in/adelguitoun">
+                <img
+                  src="./assets/footer-section/ic_twitter.svg"
+                  alt="linkedin"
+                />
+              </a>
+            </li>
+
+            <li class="social-link-item">
+              <a href="https://twitter.com/@GuitounAdel">
+                <img
+                  src="./assets/footer-section/ic_linkedin.svg"
+                  alt="Twitter"
+                />
+              </a>
+            </li>
+
+            <li class="social-link-item">
+              <a href="#">
+                <img src="./assets/footer-section/ic_medium.svg" alt="Medium" />
+              </a>
+            </li>
+
+            <li class="social-link-item">
+              <a href="#">
+                <img
+                  src="./assets/footer-section/ic_angellist.svg"
+                  alt="ic_angellist"
+                />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </footer>
     </main>
   </body>
 </html>
