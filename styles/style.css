@@ -547,9 +547,22 @@ label {
     padding-inline: 8em;
   }
 
-  .user-info.grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 0.625em;
+  .inputs-lists.flex.direction {
+    flex-flow: row wrap;
+    gap: 1em;
+    justify-content: space-between;
+  }
+
+  .input-item {
+    flex-basis: calc(50% - 1em);
+  }
+
+  .input-message-item {
+    flex-basis: 100%;
+  }
+
+  .submit-btn-container {
+    flex-grow: 1;
   }
 
   .submit-btn-container .btn {
