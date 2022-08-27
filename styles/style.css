@@ -328,6 +328,10 @@ label {
     margin-inline: auto;
     width: 85%;
   }
+
+  .project-details {
+    padding: 1.875em;
+  }
 }
 
 /* Large tablet and laptop */
