@@ -372,6 +372,28 @@ label {
     max-width: 1400px;
     margin-inline: auto;
   }
+
+  /* Header Section */
+  .header-section {
+    justify-content: center;
+    padding-block: 2.375em;
+    border-bottom: 2px solid var(--br-header);
+  }
+
+  .nav-list {
+    display: flex;
+    gap: 3.125em;
+  }
+
+  .nav-item {
+    color: var(--primary-clr);
+    font-size: var(--fs-16);
+  }
+
+  /* Buttons */
+  .menu {
+    display: none;
+  }
 }
 
 /* Interactions */
