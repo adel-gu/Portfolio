@@ -18,6 +18,20 @@
     <header class="header-section flex">
       <div class="container">
         <nav>
+          <ul class="nav-list hide" role="list">
+            <li>
+              <a class="nav-item" href="#">Hello</a>
+            </li>
+            <li>
+              <a class="nav-item" href="#">Portfolio</a>
+            </li>
+            <li>
+              <a class="nav-item" href="#">About</a>
+            </li>
+            <li>
+              <a class="nav-item" href="#">Contact</a>
+            </li>
+          </ul>
           <button class="menu">
             <img src="./assets/icons/menu.svg" alt="Menu" />
           </button>
@@ -27,21 +41,27 @@
     <main>
       <!-- Hero Section -->
       <section class="section hero-section flex direction">
-        <div class="container">
+        <div class="container flex direction">
           <div class="hero-content">
-            <h1>Adel Guitoun</h1>
+            <h1 class="hero-title">Adel Guitoun</h1>
             <p class="paragraph">
               Hello! I am a software developer! I can help you build a product,
               feature or website. Take a look of my works. If you like what you
               see and have a project you need coded, don’t hesitate and contact
               me.
             </p>
-            <button class="btn primary-btn">Get in Touch</button>
+            <button class="btn primary-btn">Start collaboration</button>
           </div>
         </div>
         <div class="hero-img">
           <img
+            class="hero-img_phone"
             src="./assets/images/image_geometry_2.svg"
+            alt="Hero Decoration Image"
+          />
+          <img
+            class="hero-img_desktop hide"
+            src="./assets/desktop/hero-section/image-geometry_1.svg"
             alt="Hero Decoration Image"
           />
         </div>
@@ -49,152 +69,233 @@
 
       <!-- Project Section -->
       <section class="section project-section">
-        <div class="container">
-          <h2 class="primary-heading">Projects</h2>
-        </div>
         <!-- Project List -->
         <ul role="list" class="projects-lists grid">
-          <li class="project-item flex direction">
-            <div class="project-img">
-              <img
-                src="./assets/images/projects-section/project1.png"
-                alt="Project 1"
-              />
+          <li class="project-heading-container">
+            <div class="container">
+              <h2 class="primary-heading">Projects</h2>
             </div>
-            <div class="container project-details">
-              <h3>Project name goes here</h3>
-              <ul role="list" class="features-container flex">
-                <li class="feature">HTML/CSS</li>
-                <li class="feature">Ruby on Rails</li>
-                <li class="feature">JavaScript</li>
-              </ul>
-              <button class="btn secondary-btn flex">
-                <span>See this project</span>
+          </li>
+          <li class="project-item pos-relative span-3 flex direction">
+            <div class="project-card pos-relative">
+              <div class="project-img">
                 <img
-                  src="./assets/icons/arrow-button.svg"
-                  alt="see this project"
+                  src="./assets/images/projects-section/project1.png"
+                  alt="Project 1"
                 />
-              </button>
+              </div>
+              <div class="container project-details pos-absolute bottom-pos">
+                <h3>Project name goes here</h3>
+                <ul role="list" class="features-container flex">
+                  <li class="feature">HTML/CSS</li>
+                  <li class="feature">Ruby on Rails</li>
+                  <li class="feature">JavaScript</li>
+                </ul>
+                <button class="btn secondary-btn flex">
+                  <span>See this project</span>
+                  <img
+                    class="phone-arrow"
+                    src="./assets/icons/arrow-button.svg"
+                    alt="see this project"
+                  />
+                  <img
+                    class="desktop-arrow hide"
+                    src="./assets/desktop/projects-section/arrow.svg"
+                    alt="see this project"
+                  />
+                </button>
+              </div>
             </div>
           </li>
 
-          <li class="project-item flex direction">
-            <div class="project-img">
-              <img
-                src="./assets/images/projects-section/project2.png"
-                alt="Project 1"
-              />
-            </div>
-            <div class="container project-details">
-              <h3>Project name goes here</h3>
-              <ul role="list" class="features-container flex">
-                <li class="feature">HTML/CSS</li>
-                <li class="feature">Ruby on Rails</li>
-                <li class="feature">JavaScript</li>
-              </ul>
-              <button class="btn secondary-btn flex">
-                <span>See this project</span>
+          <li class="project-item pos-relative flex direction">
+            <div class="project-card pos-absolute bottom-pos">
+              <div class="project-img">
                 <img
-                  src="./assets/icons/arrow-button.svg"
-                  alt="see this project"
+                  src="./assets/images/projects-section/project2.png"
+                  alt="Project 1"
                 />
-              </button>
+              </div>
+              <div
+                class="container project-details pos-absolute bottom-pos show-on-hover"
+              >
+                <h3 class="h3-small">Project name goes here</h3>
+                <ul role="list" class="features-container flex">
+                  <li class="feature">HTML/CSS</li>
+                  <li class="feature">Ruby on Rails</li>
+                  <li class="feature">JavaScript</li>
+                </ul>
+                <button class="btn secondary-btn flex">
+                  <span>See this project</span>
+                  <img
+                    class="phone-arrow"
+                    src="./assets/icons/arrow-button.svg"
+                    alt="see this project"
+                  />
+                  <img
+                    class="desktop-arrow hide"
+                    src="./assets/desktop/projects-section/arrow.svg"
+                    alt="see this project"
+                  />
+                </button>
+              </div>
             </div>
           </li>
 
-          <li class="project-item flex direction">
-            <div class="project-img">
-              <img
-                src="./assets/images/projects-section/project3.png"
-                alt="Project 1"
-              />
-            </div>
-            <div class="container project-details">
-              <h3>Project name goes here</h3>
-              <ul role="list" class="features-container flex">
-                <li class="feature">HTML/CSS</li>
-                <li class="feature">Ruby on Rails</li>
-                <li class="feature">JavaScript</li>
-              </ul>
-              <button class="btn secondary-btn flex">
-                <span>See this project</span>
+          <li class="project-bg1 span-2 hide">
+            <img
+              src="./assets/desktop/projects-section/image-geometry_2.svg"
+              alt=""
+            />
+          </li>
+
+          <li class="project-item pos-relative flex direction">
+            <div class="project-card pos-absolute top-pos">
+              <div class="project-img">
                 <img
-                  src="./assets/icons/arrow-button.svg"
-                  alt="see this project"
+                  src="./assets/images/projects-section/project3.png"
+                  alt="Project 1"
                 />
-              </button>
+              </div>
+              <div class="container project-details pos-absolute bottom-pos">
+                <h3 class="h3-small">Project name goes here</h3>
+                <ul role="list" class="features-container flex">
+                  <li class="feature">HTML/CSS</li>
+                  <li class="feature">Ruby on Rails</li>
+                  <li class="feature">JavaScript</li>
+                </ul>
+                <button class="btn secondary-btn flex">
+                  <span>See this project</span>
+                  <img
+                    class="phone-arrow"
+                    src="./assets/icons/arrow-button.svg"
+                    alt="see this project"
+                  />
+                  <img
+                    class="desktop-arrow hide"
+                    src="./assets/desktop/projects-section/arrow.svg"
+                    alt="see this project"
+                  />
+                </button>
+              </div>
             </div>
           </li>
 
-          <li class="project-item flex direction">
-            <div class="project-img">
-              <img
-                src="./assets/images/projects-section/project4.png"
-                alt="Project 1"
-              />
-            </div>
-            <div class="container project-details">
-              <h3>Project name goes here</h3>
-              <ul role="list" class="features-container flex">
-                <li class="feature">HTML/CSS</li>
-                <li class="feature">Ruby on Rails</li>
-                <li class="feature">JavaScript</li>
-              </ul>
-              <button class="btn secondary-btn flex">
-                <span>See this project</span>
+          <li class="project-item pos-relative flex direction span-2">
+            <div class="project-card pos-relative bottom-pos">
+              <div class="project-img">
                 <img
-                  src="./assets/icons/arrow-button.svg"
-                  alt="see this project"
+                  src="./assets/images/projects-section/project6.png"
+                  alt="Project 1"
                 />
-              </button>
+              </div>
+              <div
+                class="container project-details pos-absolute bottom-pos show-on-hover"
+              >
+                <h3 class="h3-small">Project name goes here</h3>
+                <ul role="list" class="features-container flex">
+                  <li class="feature">HTML/CSS</li>
+                  <li class="feature">Ruby on Rails</li>
+                  <li class="feature">JavaScript</li>
+                </ul>
+                <button class="btn secondary-btn flex">
+                  <span>See this project</span>
+                  <img
+                    class="phone-arrow"
+                    src="./assets/icons/arrow-button.svg"
+                    alt="see this project"
+                  />
+                  <img
+                    class="desktop-arrow hide"
+                    src="./assets/desktop/projects-section/arrow.svg"
+                    alt="see this project"
+                  />
+                </button>
+              </div>
             </div>
           </li>
 
-          <li class="project-item flex direction">
-            <div class="project-img">
-              <img
-                src="./assets/images/projects-section/project5.png"
-                alt="Project 1"
-              />
-            </div>
-            <div class="container project-details">
-              <h3>Project name goes here</h3>
-              <ul role="list" class="features-container flex">
-                <li class="feature">HTML/CSS</li>
-                <li class="feature">Ruby on Rails</li>
-                <li class="feature">JavaScript</li>
-              </ul>
-              <button class="btn secondary-btn flex">
-                <span>See this project</span>
+          <li class="project-bg2 pos-relative hide">
+            <img
+              class="pos-absolute bottom-pos"
+              src="./assets/desktop/projects-section/red-squar.svg"
+              alt=""
+            />
+          </li>
+
+          <li class="project-item pos-relative flex direction project-bg3">
+            <div class="project-card pos-absolute high-top-pos">
+              <div class="project-img">
                 <img
-                  src="./assets/icons/arrow-button.svg"
-                  alt="see this project"
+                  src="./assets/images/projects-section/project5.png"
+                  alt="Project 1"
                 />
-              </button>
+              </div>
+              <div
+                class="container project-details pos-absolute bottom-pos show-on-hover"
+              >
+                <h3 class="h3-small">Project name goes here</h3>
+                <ul role="list" class="features-container flex">
+                  <li class="feature">HTML/CSS</li>
+                  <li class="feature">Ruby on Rails</li>
+                  <li class="feature">JavaScript</li>
+                </ul>
+                <button class="btn secondary-btn flex">
+                  <span>See this project</span>
+                  <img
+                    class="phone-arrow"
+                    src="./assets/icons/arrow-button.svg"
+                    alt="see this project"
+                  />
+                  <img
+                    class="desktop-arrow hide"
+                    src="./assets/desktop/projects-section/arrow.svg"
+                    alt="see this project"
+                  />
+                </button>
+              </div>
             </div>
           </li>
 
-          <li class="project-item flex direction">
-            <div class="project-img">
-              <img
-                src="./assets/images/projects-section/project6.png"
-                alt="Project 1"
-              />
-            </div>
-            <div class="container project-details">
-              <h3>Project name goes here</h3>
-              <ul role="list" class="features-container flex">
-                <li class="feature">HTML/CSS</li>
-                <li class="feature">Ruby on Rails</li>
-                <li class="feature">JavaScript</li>
-              </ul>
-              <button class="btn secondary-btn flex">
-                <span>See this project</span>
+          <li class="project-bg4 pos-relative span-2 hide">
+            <img
+              src="./assets/desktop/projects-section/image-geometry_4.svg"
+              alt=""
+            />
+          </li>
+
+          <li class="project-item pos-relative flex direction span-2">
+            <div class="project-card pos-relative bottom-pos">
+              <div class="project-img">
                 <img
-                  src="./assets/icons/arrow-button.svg"
-                  alt="see this project"
+                  class="width-30"
+                  src="./assets/images/projects-section/project4.png"
+                  alt="Project 1"
                 />
-              </button>
+              </div>
+              <div
+                class="container project-details pos-absolute bottom-pos show-on-hover"
+              >
+                <h3 class="h3-small">Project name goes here</h3>
+                <ul role="list" class="features-container flex">
+                  <li class="feature">HTML/CSS</li>
+                  <li class="feature">Ruby on Rails</li>
+                  <li class="feature">JavaScript</li>
+                </ul>
+                <button class="btn secondary-btn flex">
+                  <span>See this project</span>
+                  <img
+                    class="phone-arrow"
+                    src="./assets/icons/arrow-button.svg"
+                    alt="see this project"
+                  />
+                  <img
+                    class="desktop-arrow hide"
+                    src="./assets/desktop/projects-section/arrow.svg"
+                    alt="see this project"
+                  />
+                </button>
+              </div>
             </div>
           </li>
         </ul>
@@ -203,7 +304,7 @@
       <section class="section about-section">
         <div class="container about-container flex direction">
           <div class="about-content">
-            <h2 class="primary-heading">About</h2>
+            <h2>About</h2>
             <p class="paragraph">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -246,6 +347,7 @@
                   <li>Terminal</li>
                 </ul>
               </li>
+              <li class="skill-item-bg-decoration hide"></li>
             </ul>
           </div>
         </div>
@@ -253,10 +355,11 @@
 
       <!-- Footer Section -->
       <footer class="section footer-section bg-decoration">
-        <div class="container">
+        <div class="container grid">
+          <div class="top-bg-decoration hide"></div>
           <div class="top-footer-container flex direction">
             <div class="contact-content">
-              <h2 class="primary-heading">Get started</h2>
+              <h2>Get started</h2>
               <p class="paragraph">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna.
@@ -291,7 +394,7 @@
                     required
                   />
                 </li>
-                <li>
+                <li class="input-message-item">
                   <textarea
                     class="input"
                     name="message"
@@ -304,13 +407,15 @@
                 </li>
                 <li class="submit-btn-container">
                   <button class="btn primary-btn" type="submit">
-                    Get in Touch
+                    Start collaboration
                   </button>
                 </li>
               </ul>
             </form>
           </div>
+          <div class="bottom-bg-decoration hide"></div>
         </div>
+
         <div class="container bottom-footer-container flex direction">
           <a class="link flex" href="#">
             <span>Get my Resume</span>
