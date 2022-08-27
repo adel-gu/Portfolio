@@ -260,6 +260,11 @@ label {
 }
 
 /* Text contents Latout */
+.hero-title {
+  width: 183px;
+  line-height: 100%;
+}
+
 .paragraph {
   margin-bottom: 2em;
 }
@@ -365,6 +370,14 @@ label {
     background-image: none;
   }
 
+  .container {
+    border: 4px solid orange;
+  }
+
+  .section {
+    border: 4px solid red;
+  }
+
   /* Section and container */
   .section,
   .header-section {
@@ -390,8 +403,43 @@ label {
     font-size: var(--fs-16);
   }
 
+  /* Hero Section */
+  .hero-section {
+    gap: 0;
+    padding: 0;
+    margin-bottom: 10em;
+  }
+
+  .hero-section.direction {
+    flex-direction: row;
+  }
+
+  .hero-section .container {
+    flex: 1;
+    padding-left: 5em;
+    padding-right: 3em;
+    background: url("../assets/desktop/dots.svg") no-repeat right bottom;
+  }
+
+  .hero-img {
+    flex: 1;
+  }
+
+  .hero-section .container.flex {
+    justify-content: center;
+  }
+
   /* Buttons */
   .menu {
+    display: none;
+  }
+
+  .primary-btn {
+    width: 60%;
+  }
+
+  /* Images */
+  .hero-img_phone {
     display: none;
   }
 }
