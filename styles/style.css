@@ -13,6 +13,7 @@
 
   /* Borders */
   --br-normal: #dfdfe0;
+  --br-header: #dddfe6;
 
   /* Form, Inputs */
   --label-clr: #7d7c84;
@@ -23,7 +24,10 @@
   --ff-normal: 'Poppins', sans-serif;
 
   /* font-size */
+  --fs-75: 4.688rem;
+  --fs-60: 3.75rem;
   --fs-50: 3.125rem;
+  --fs-40: 2.5rem;
   --fs-20: 1.25rem;
   --fs-18: 1.125rem;
   --fs-16: 1rem;
