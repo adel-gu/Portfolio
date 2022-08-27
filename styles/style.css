@@ -470,7 +470,7 @@ label {
     transform-origin: right top;
     transform: rotate(-90deg);
     position: absolute;
-    right: 5em;
+    right: 90%;
   }
 
   .project-details {
