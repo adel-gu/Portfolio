@@ -372,6 +372,7 @@ label {
 
   .container {
     border: 4px solid orange;
+    padding-inline: 5em;
   }
 
   .section {
@@ -466,7 +467,7 @@ label {
 
   .project-heading-container {
     background: url("../assets/desktop/dots.svg") no-repeat right top;
-    background-size: 30%;
+    background-size: 50%;
     position: relative;
   }
 
@@ -474,7 +475,7 @@ label {
     transform-origin: right top;
     transform: rotate(-90deg);
     position: absolute;
-    right: 80%;
+    right: 5em;
   }
 
   .project-details {
@@ -495,6 +496,40 @@ label {
   .phone-arrow {
     display: none;
   }
+
+  /* About Section */
+  .about-section .container {
+    padding-block: 10em;
+  }
+
+  .about-section .direction {
+    flex-direction: row-reverse;
+  }
+
+  .about-container {
+    gap: 6em;
+  }
+
+  .about-container .about-content {
+    flex: 1;
+  }
+
+  .about-container .skills-list {
+    flex: 1.25;
+  }
+
+  .skills-list.grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 0;
+  }
+
+  .skill-item-bg-decoration {
+    background: url("../assets/desktop/about-section/image_dots_with_teal.svg") no-repeat right bottom;
+    background-size: 60%;
+  }
+
+  /* Footer Section */
 
   /* Buttons */
   .menu {
