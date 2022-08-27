@@ -279,6 +279,9 @@ label {
   align-items: center;
   justify-content: center;
   gap: 0.5em;
+  transition: background color;
+  transition-duration: 200ms;
+  transition-timing-function: ease-in;
 }
 
 .primary-btn {
@@ -300,6 +303,7 @@ label {
   border: 2px solid var(--br-normal);
   border-radius: 4px;
   padding: 1.5em 0 0.5em 1em;
+  transition: border 200ms ease-in;
 }
 
 /* Links */
@@ -361,7 +365,8 @@ label {
   }
 
   .show-on-hover {
-    display: none;
+    opacity: 0;
+    transition: all 200ms ease-in;
   }
 
   /* Body */
@@ -396,6 +401,7 @@ label {
   .nav-item {
     color: var(--primary-clr);
     font-size: var(--fs-16);
+    transition: all 200ms ease-in;
   }
 
   /* Hero Section */
@@ -425,10 +431,6 @@ label {
   }
 
   /* Project Section */
-  .width-30 {
-    width: 70%;
-  }
-
   .projects-lists.grid {
     grid-template-columns: 1fr 1fr 0.5fr 1fr;
   }
@@ -493,6 +495,11 @@ label {
 
   .phone-arrow {
     display: none;
+    transition: all 200ms ease-in;
+  }
+
+  .width-30 {
+    width: 70%;
   }
 
   /* About Section */
@@ -636,7 +643,37 @@ label {
   color: var(--primary-clr);
 }
 
+.secondary-btn:hover,
+.secondary:focus {
+  background: none;
+  color: var(--secondary-clr);
+}
+
+.secondary-btn:hover .phone-arrow,
+.secondary:focus .phone-arrow {
+  display: inline;
+}
+
+.secondary-btn:hover .desktop-arrow,
+.secondary:focus .desktop-arrow {
+  display: none;
+}
+
 .input:focus {
   outline: none;
   border-color: var(--primary-clr);
+}
+
+.project-card:hover {
+  cursor: pointer;
+}
+
+.project-card:hover .show-on-hover {
+  cursor: pointer;
+  opacity: 1;
+}
+
+.nav-item:hover,
+.nav-item:focus {
+  text-decoration: underline;
 }
