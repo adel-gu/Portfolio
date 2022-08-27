@@ -305,6 +305,75 @@ label {
   gap: 0.5em;
 }
 
+/* !!! Desktop Styles */
+.hide {
+  display: none;
+}
+
+/* !! Media Quieries */
+
+/* Small tables and large phones */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .container {
+    padding: 0;
+  }
+
+  .section,
+  .header-section {
+    margin-inline: auto;
+    width: 85%;
+  }
+}
+
+/* Large tablet and laptop */
+@media screen and (min-width: 1024px) {
+  /* Typography */
+  h1,
+  h2 {
+    font-size: var(--fs-75);
+    width: auto;
+  }
+
+  h3 {
+    font-size: var(--fs-40);
+    font-weight: var(--fw-600);
+  }
+
+  label {
+    font-size: var(--fs-14);
+  }
+
+  .h3-small {
+    font-size: var(--fs-20);
+  }
+
+  .feature {
+    font-size: var(--fs-10);
+  }
+
+  /* Display none-block */
+  .hide {
+    display: block;
+  }
+
+  .show-on-hover {
+    display: none;
+  }
+
+  /* Body */
+  .bg-decoration {
+    background-image: none;
+  }
+
+  /* Section and container */
+  .section,
+  .header-section {
+    width: 100%;
+    max-width: 1400px;
+    margin-inline: auto;
+  }
+}
+
 /* Interactions */
 .menu:hover,
 .btn:hover {
