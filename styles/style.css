@@ -282,7 +282,6 @@ label {
   transition: background color;
   transition-duration: 200ms;
   transition-timing-function: ease-in;
-
 }
 
 .primary-btn {
@@ -304,6 +303,7 @@ label {
   border: 2px solid var(--br-normal);
   border-radius: 4px;
   padding: 1.5em 0 0.5em 1em;
+  transition: border 200ms ease-in;
 }
 
 /* Links */
@@ -495,6 +495,7 @@ label {
 
   .phone-arrow {
     display: none;
+    transition: all 200ms ease-in;
   }
 
   .width-30 {
@@ -661,7 +662,6 @@ label {
 .input:focus {
   outline: none;
   border-color: var(--primary-clr);
-  
 }
 
 .project-card:hover {
