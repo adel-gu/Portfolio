@@ -279,6 +279,10 @@ label {
   align-items: center;
   justify-content: center;
   gap: 0.5em;
+  transition: background color;
+  transition-duration: 200ms;
+  transition-timing-function: ease-in;
+
 }
 
 .primary-btn {
@@ -638,9 +642,26 @@ label {
   color: var(--primary-clr);
 }
 
+.secondary-btn:hover,
+.secondary:focus {
+  background: none;
+  color: var(--secondary-clr);
+}
+
+.secondary-btn:hover .phone-arrow,
+.secondary:focus .phone-arrow {
+  display: inline;
+}
+
+.secondary-btn:hover .desktop-arrow,
+.secondary:focus .desktop-arrow {
+  display: none;
+}
+
 .input:focus {
   outline: none;
   border-color: var(--primary-clr);
+  
 }
 
 .project-card:hover {
