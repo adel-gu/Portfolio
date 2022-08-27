@@ -429,6 +429,73 @@ label {
     justify-content: center;
   }
 
+  /* Project Section */
+  .projects-lists.grid {
+    grid-template-columns: 1fr 1fr 0.5fr 1fr;
+  }
+
+  /* Grid Span */
+  .span-2 {
+    grid-column: span 2;
+  }
+
+  .span-3 {
+    grid-column: span 3;
+  }
+
+  /* Positions */
+  .pos-relative {
+    position: relative;
+  }
+
+  .pos-absolute {
+    position: absolute;
+  }
+
+  .high-top-pos {
+    top: -40%;
+  }
+
+  .top-pos {
+    top: 0;
+  }
+
+  .bottom-pos {
+    bottom: 0;
+  }
+
+  .project-heading-container {
+    background: url("../assets/desktop/dots.svg") no-repeat right top;
+    background-size: 30%;
+    position: relative;
+  }
+
+  .primary-heading {
+    transform-origin: right top;
+    transform: rotate(-90deg);
+    position: absolute;
+    right: 80%;
+  }
+
+  .project-details {
+    background: rgba(26, 34, 54, 85%);
+    padding: 0.875em 1.875em 1.875em 1.875em;
+    width: 100%;
+  }
+
+  .project-bg3 {
+    background: url("../assets/desktop/projects-section/tow-squars.svg") no-repeat right 65%;
+    background-size: 90%;
+  }
+
+  .project-card {
+    width: 100%;
+  }
+
+  .phone-arrow {
+    display: none;
+  }
+
   /* Buttons */
   .menu {
     display: none;
@@ -436,6 +503,11 @@ label {
 
   .primary-btn {
     width: 60%;
+  }
+
+  .secondary-btn {
+    background: var(--secondary-clr);
+    color: var(--primary-clr);
   }
 
   /* Images */
