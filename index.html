@@ -354,10 +354,11 @@
 
       <!-- Footer Section -->
       <footer class="section footer-section bg-decoration">
-        <div class="container">
+        <div class="container grid">
+          <div class="top-bg-decoration hide"></div>
           <div class="top-footer-container flex direction">
             <div class="contact-content">
-              <h2 class="primary-heading">Get started</h2>
+              <h2>Get started</h2>
               <p class="paragraph">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna.
@@ -369,29 +370,33 @@
               method="post"
             >
               <ul role="list" class="inputs-lists flex direction">
-                <li class="input-item">
-                  <label class="input-label" for="user-name">Your name</label>
-                  <input
-                    class="input"
-                    name="name"
-                    type="text"
-                    id="user-name"
-                    placeholder="Please enter you name here..."
-                    maxlength="30"
-                    required
-                  />
-                </li>
-                <li class="input-item">
-                  <label class="input-label" for="user-email">Your email</label>
-                  <input
-                    class="input"
-                    name="email"
-                    id="user-email"
-                    type="email"
-                    placeholder="Please enter you email here..."
-                    required
-                  />
-                </li>
+                <div class="user-info grid">
+                  <li class="input-item">
+                    <label class="input-label" for="user-name">Your name</label>
+                    <input
+                      class="input"
+                      name="name"
+                      type="text"
+                      id="user-name"
+                      placeholder="Please enter you name here..."
+                      maxlength="30"
+                      required
+                    />
+                  </li>
+                  <li class="input-item">
+                    <label class="input-label" for="user-email"
+                      >Your email</label
+                    >
+                    <input
+                      class="input"
+                      name="email"
+                      id="user-email"
+                      type="email"
+                      placeholder="Please enter you email here..."
+                      required
+                    />
+                  </li>
+                </div>
                 <li>
                   <textarea
                     class="input"
@@ -411,7 +416,9 @@
               </ul>
             </form>
           </div>
+          <div class="bottom-bg-decoration hide"></div>
         </div>
+
         <div class="container bottom-footer-container flex direction">
           <a class="link flex" href="#">
             <span>Get my Resume</span>
