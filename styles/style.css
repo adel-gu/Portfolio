@@ -361,7 +361,8 @@ label {
   }
 
   .show-on-hover {
-    display: none;
+    opacity: 0;
+    transition: all 200ms ease-in;
   }
 
   /* Body */
@@ -396,6 +397,7 @@ label {
   .nav-item {
     color: var(--primary-clr);
     font-size: var(--fs-16);
+    transition: all 200ms ease-in;
   }
 
   /* Hero Section */
@@ -425,10 +427,6 @@ label {
   }
 
   /* Project Section */
-  .width-30 {
-    width: 70%;
-  }
-
   .projects-lists.grid {
     grid-template-columns: 1fr 1fr 0.5fr 1fr;
   }
@@ -493,6 +491,10 @@ label {
 
   .phone-arrow {
     display: none;
+  }
+
+  .width-30 {
+    width: 70%;
   }
 
   /* About Section */
@@ -639,4 +641,18 @@ label {
 .input:focus {
   outline: none;
   border-color: var(--primary-clr);
+}
+
+.project-card:hover {
+  cursor: pointer;
+}
+
+.project-card:hover .show-on-hover {
+  cursor: pointer;
+  opacity: 1;
+}
+
+.nav-item:hover,
+.nav-item:focus {
+  text-decoration: underline;
 }
