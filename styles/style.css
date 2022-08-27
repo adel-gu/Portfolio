@@ -371,12 +371,7 @@ label {
   }
 
   .container {
-    border: 4px solid orange;
     padding-inline: 5em;
-  }
-
-  .section {
-    border: 4px solid red;
   }
 
   /* Section and container */
@@ -530,6 +525,68 @@ label {
   }
 
   /* Footer Section */
+  .footer-section .container {
+    padding-inline: 0;
+  }
+
+  .footer-section .container.grid {
+    grid-template-columns: 1fr 3fr 1fr;
+  }
+
+  .top-bg-decoration {
+    background: url("../assets/desktop/footer-section/image-geometry_6.svg") no-repeat left top;
+    background-size: 90%;
+  }
+
+  .bottom-bg-decoration {
+    background: url("../assets/desktop/footer-section/image-geometry_7.svg") no-repeat right bottom;
+    background-size: 90%;
+  }
+
+  .top-footer-container {
+    padding-inline: 8em;
+  }
+
+  .user-info.grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.625em;
+  }
+
+  .submit-btn-container .btn {
+    display: block;
+    margin: auto;
+    width: 40%;
+  }
+
+  .bottom-footer-container.container {
+    padding-block: 3em;
+    padding-inline: 5em;
+  }
+
+  .bottom-footer-container.flex.direction {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .social-links-list {
+    flex-basis: 40%;
+  }
+
+  /* links */
+  .link {
+    flex-basis: 20%;
+  }
+
+  /* Inputs and labels */
+  .input-label {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+
+  .input {
+    padding: 1em 1.25em;
+  }
 
   /* Buttons */
   .menu {
