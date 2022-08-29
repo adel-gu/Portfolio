@@ -4,7 +4,7 @@
 
 > This Repository is about building personal protfolio website.
 
-## Screenshots
+## Preview
 
 The project build up using the mobile first aproach. Feel free to try it out, explore the code and I'll appreciate if you drop a comment!
 
