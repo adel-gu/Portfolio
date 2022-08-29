@@ -4,9 +4,25 @@
 
 > This Repository is about building personal protfolio website.
 
+## Screenshots
+
+The project build up using the mobile first aproach. Feel free to try it out, explore the code and I'll appreciate if you drop a comment!
+
+> Desktop version
+
+![Template 5-main 1](https://user-images.githubusercontent.com/68030297/187212418-3d962f4a-f2b6-4276-9301-196e83396326.png)
+
+> Mobile Version
+
+![Template 5-main-mobile 1](https://user-images.githubusercontent.com/68030297/187213523-fa749acc-ce80-4847-b8a5-9b41279102b3.png)
+
 ## Built With
 
-- HTML5 && CSS3
+- HTML5 & CSS3
+
+## Live Demo (if available)
+
+[Live Demo Link](https://adel-gu.github.io/portfolio-mobile-first/)
 
 ## Authors
 
