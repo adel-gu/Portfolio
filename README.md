@@ -35,7 +35,7 @@ Click on the `code` green button, and from the dropdown list chose `Download ZIP
 - HTML5 & CSS3
 
 ## Live Demo (if available)
-[Live Demo Link](https://adel-gu.github.io/portfolio-mobile-first/)
+[Experience a Live Demo 🚀](https://adel-gu.github.io/portfolio-mobile-first/)
 
 ## Authors
 
