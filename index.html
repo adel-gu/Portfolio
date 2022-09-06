@@ -16,27 +16,26 @@
   <body class="bg-decoration">
     <!-- Header Section -->
     <header class="header-section flex">
-      <div class="container">
-        <nav>
-          <ul class="nav-list hide" role="list">
+        <nav id="nav" class="" id="nav">
+          <button id="burger-menu" type="button" class="align-self-end menu">
+            <img src="./assets/icons/menu.svg" alt="menu" data-toggled = "false"/>
+          </button>
+   
+          <ul id="nav_list" class="hidden" role="list">
             <li>
-              <a class="nav-item" href="#">Hello</a>
+              <a href="#">Hello</a>
             </li>
             <li>
-              <a class="nav-item" href="#">Portfolio</a>
+              <a href="#">Portfolio</a>
             </li>
             <li>
-              <a class="nav-item" href="#">About</a>
+              <a href="#">About</a>
             </li>
             <li>
-              <a class="nav-item" href="#">Contact</a>
+              <a href="#">Contact</a>
             </li>
           </ul>
-          <button class="menu">
-            <img src="./assets/icons/menu.svg" alt="Menu" />
-          </button>
         </nav>
-      </div>
     </header>
     <main>
       <!-- Hero Section -->
@@ -477,5 +476,7 @@
         </div>
       </footer>
     </main>
+
+    <script src="main.js"></script>
   </body>
 </html>

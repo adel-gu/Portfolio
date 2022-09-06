@@ -158,7 +158,66 @@ label {
 .header-section {
   justify-content: flex-end;
   padding-top: 1.25em;
+  padding-right: 16px;
+  position: relative;
 }
+
+.overflow {
+  overflow: hidden;
+}
+ 
+.hidden{
+  display: none;
+}
+
+#nav{
+  display: flex;
+}
+
+.align-self-center{
+  align-self: center;
+}
+
+.align-self-end{
+   align-self: flex-end;
+}
+
+.toggled-menu {
+  flex-direction: column;
+  justify-content:flex-start;
+  width: 100%;
+  padding-top: 24px;
+  padding-right: 20px;
+  background: #fff;
+  background-image: url('../assets/mobile-menu/image_geometry_menu_1.svg'), url('../assets/mobile-menu/image_geometry_menu_2.svg');
+  background-position: left top, bottom right;
+  background-size:auto, contain;
+  background-repeat: no-repeat;
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0;
+  height: 100vh;
+  z-index: 0;
+}
+
+.nav-list{
+  text-align: center;
+  width: 100%;
+  margin: 150px auto 0 auto;
+}
+
+.nav-link {
+  color: #3a4a42;
+  display: block;
+  font-size: 32px;
+  font-weight:600;
+  margin-bottom: 40px;
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
 
 /* Hero section Styles */
 .hero-section {
