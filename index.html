@@ -11,35 +11,37 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles/style.css" />
+    <script src="main.js" defer></script>
     <title>Adel Guitoun - Portfolio</title>
   </head>
   <body class="bg-decoration">
     <!-- Header Section -->
     <header class="header-section flex">
-        <nav id="nav" class="" id="nav">
-          <button id="burger-menu" type="button" class="align-self-end menu">
-            <img src="./assets/icons/menu.svg" alt="menu" data-toggled = "false"/>
-          </button>
-   
-          <ul id="nav_list" class="hidden" role="list">
-            <li>
-              <a href="#">Hello</a>
-            </li>
-            <li>
-              <a href="#">Portfolio</a>
-            </li>
-            <li>
-              <a href="#">About</a>
-            </li>
-            <li>
-              <a href="#">Contact</a>
-            </li>
-          </ul>
-        </nav>
+      <nav class="nav-bar">
+        <button type="button" class="menu-btn">
+          <img src="./assets/icons/menu.svg" alt="menu" />
+          <img class="hidden" src="./assets/menu/cancel.svg" alt="cancel" />
+        </button>
+
+        <ul class="nav-list hidden" role="list">
+          <li>
+            <a href="#hero-section">Hello</a>
+          </li>
+          <li>
+            <a href="#project-section">Portfolio</a>
+          </li>
+          <li>
+            <a href="#about-section">About</a>
+          </li>
+          <li>
+            <a href="#contact-section">Contact</a>
+          </li>
+        </ul>
+      </nav>
     </header>
     <main>
       <!-- Hero Section -->
-      <section class="section hero-section flex direction">
+      <section id="hero-section" class="section hero-section flex direction">
         <div class="container flex direction">
           <div class="hero-content">
             <h1 class="hero-title">Adel Guitoun</h1>
@@ -67,7 +69,7 @@
       </section>
 
       <!-- Project Section -->
-      <section class="section project-section">
+      <section id="project-section" class="section project-section">
         <!-- Project List -->
         <ul role="list" class="projects-lists grid">
           <li class="project-heading-container">
@@ -303,8 +305,9 @@
           </li>
         </ul>
       </section>
+
       <!-- About Section -->
-      <section class="section about-section">
+      <section id="about-section" class="section about-section">
         <div class="container about-container flex direction">
           <div class="about-content">
             <h2>About</h2>
@@ -357,7 +360,10 @@
       </section>
 
       <!-- Footer Section -->
-      <footer class="section footer-section bg-decoration">
+      <footer
+        id="#contact-section"
+        class="section footer-section bg-decoration"
+      >
         <div class="container grid">
           <div class="top-bg-decoration hide"></div>
           <div class="top-footer-container flex direction">
@@ -476,7 +482,5 @@
         </div>
       </footer>
     </main>
-
-    <script src="main.js"></script>
   </body>
 </html>
