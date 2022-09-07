@@ -11,36 +11,37 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles/style.css" />
+    <script src="main.js" defer></script>
     <title>Adel Guitoun - Portfolio</title>
   </head>
   <body class="bg-decoration">
     <!-- Header Section -->
     <header class="header-section flex">
-      <div class="container">
-        <nav>
-          <ul class="nav-list hide" role="list">
-            <li>
-              <a class="nav-item" href="#">Hello</a>
-            </li>
-            <li>
-              <a class="nav-item" href="#">Portfolio</a>
-            </li>
-            <li>
-              <a class="nav-item" href="#">About</a>
-            </li>
-            <li>
-              <a class="nav-item" href="#">Contact</a>
-            </li>
-          </ul>
-          <button class="menu">
-            <img src="./assets/icons/menu.svg" alt="Menu" />
-          </button>
-        </nav>
-      </div>
+      <nav class="nav-bar">
+        <button type="button" class="menu-btn">
+          <img src="./assets/icons/menu.svg" alt="menu" />
+          <img class="hidden" src="./assets/menu/cancel.svg" alt="cancel" />
+        </button>
+
+        <ul class="nav-list hidden" role="list">
+          <li>
+            <a href="#hero-section">Hello</a>
+          </li>
+          <li>
+            <a href="#project-section">Portfolio</a>
+          </li>
+          <li>
+            <a href="#about-section">About</a>
+          </li>
+          <li>
+            <a href="#contact-section">Contact</a>
+          </li>
+        </ul>
+      </nav>
     </header>
     <main>
       <!-- Hero Section -->
-      <section class="section hero-section flex direction">
+      <section id="hero-section" class="section hero-section flex direction">
         <div class="container flex direction">
           <div class="hero-content">
             <h1 class="hero-title">Adel Guitoun</h1>
@@ -50,7 +51,9 @@
               see and have a project you need coded, don’t hesitate and contact
               me.
             </p>
-            <button class="btn primary-btn">Start collaboration</button>
+            <button class="btn primary-btn" type="button">
+              Start collaboration
+            </button>
           </div>
         </div>
         <div class="hero-img">
@@ -68,7 +71,7 @@
       </section>
 
       <!-- Project Section -->
-      <section class="section project-section">
+      <section id="project-section" class="section project-section">
         <!-- Project List -->
         <ul role="list" class="projects-lists grid">
           <li class="project-heading-container">
@@ -93,7 +96,7 @@
                   <li class="feature">Ruby on Rails</li>
                   <li class="feature">JavaScript</li>
                 </ul>
-                <button class="btn secondary-btn flex">
+                <button class="btn secondary-btn flex" type="button">
                   <span>See this project</span>
                   <img
                     class="phone-arrow"
@@ -127,7 +130,7 @@
                   <li class="feature">Ruby on Rails</li>
                   <li class="feature">JavaScript</li>
                 </ul>
-                <button class="btn secondary-btn flex">
+                <button class="btn secondary-btn flex" type="button">
                   <span>See this project</span>
                   <img
                     class="phone-arrow"
@@ -168,7 +171,7 @@
                   <li class="feature">Ruby on Rails</li>
                   <li class="feature">JavaScript</li>
                 </ul>
-                <button class="btn secondary-btn flex">
+                <button class="btn secondary-btn flex" type="button">
                   <span>See this project</span>
                   <img
                     class="phone-arrow"
@@ -202,7 +205,7 @@
                   <li class="feature">Ruby on Rails</li>
                   <li class="feature">JavaScript</li>
                 </ul>
-                <button class="btn secondary-btn flex">
+                <button class="btn secondary-btn flex" type="button">
                   <span>See this project</span>
                   <img
                     class="phone-arrow"
@@ -244,7 +247,7 @@
                   <li class="feature">Ruby on Rails</li>
                   <li class="feature">JavaScript</li>
                 </ul>
-                <button class="btn secondary-btn flex">
+                <button class="btn secondary-btn flex" type="button">
                   <span>See this project</span>
                   <img
                     class="phone-arrow"
@@ -286,7 +289,7 @@
                   <li class="feature">Ruby on Rails</li>
                   <li class="feature">JavaScript</li>
                 </ul>
-                <button class="btn secondary-btn flex">
+                <button class="btn secondary-btn flex" type="button">
                   <span>See this project</span>
                   <img
                     class="phone-arrow"
@@ -304,8 +307,9 @@
           </li>
         </ul>
       </section>
+
       <!-- About Section -->
-      <section class="section about-section">
+      <section id="about-section" class="section about-section">
         <div class="container about-container flex direction">
           <div class="about-content">
             <h2>About</h2>
@@ -315,7 +319,7 @@
               enim ad minim veniam, quis nostrud exercitation ullamco laboris
               nisi ut aliquip ea eiusmod
             </p>
-            <button class="btn primary-btn flex">
+            <button class="btn primary-btn flex" type="button">
               <span>Get my CV</span>
               <img src="./assets/icons/download-button.svg" alt="download cv" />
             </button>
@@ -361,7 +365,10 @@
       <footer class="section footer-section bg-decoration">
         <div class="container grid">
           <div class="top-bg-decoration hide"></div>
-          <div class="top-footer-container flex direction">
+          <section
+            id="contact-section"
+            class="top-footer-container flex direction"
+          >
             <div class="contact-content">
               <h2>Get started</h2>
               <p class="paragraph">
@@ -416,7 +423,7 @@
                 </li>
               </ul>
             </form>
-          </div>
+          </section>
           <div class="bottom-bg-decoration hide"></div>
         </div>
 

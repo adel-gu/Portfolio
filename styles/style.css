@@ -51,6 +51,10 @@
   margin: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 ul {
   list-style-type: disc;
 }
@@ -158,6 +162,60 @@ label {
 .header-section {
   justify-content: flex-end;
   padding-top: 1.25em;
+  padding-right: 16px;
+  position: relative;
+}
+
+.overflow {
+  overflow: hidden;
+}
+
+.hidden {
+  display: none;
+}
+
+.nav-bar {
+  display: flex;
+}
+
+.align-self-center {
+  align-self: center;
+}
+
+.align-self-end {
+  align-self: flex-end;
+}
+
+.toggled-menu {
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+  padding: 150px 20px;
+  background: #fff;
+  background-image: url('../assets/menu/bg-top.svg'), url('../assets/menu/bg-bottom.svg'), url('../assets/menu/dots.svg'), url('../assets/menu/dots.svg');
+  background-position: left top, bottom right, 80% 10%, 20% 80%;
+  background-size: auto, contain, auto, auto;
+  background-repeat: no-repeat;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  z-index: 0;
+}
+
+.nav-list {
+  text-align: center;
+  width: 100%;
+}
+
+.nav-link {
+  color: #3a4a42;
+  display: block;
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 /* Hero section Styles */
@@ -270,9 +328,11 @@ label {
 }
 
 /* Buttons */
-.menu {
+.menu-btn {
   background: none;
   border: none;
+  position: relative;
+  z-index: 1;
 }
 
 .btn {
@@ -612,7 +672,7 @@ label {
   }
 
   /* Buttons */
-  .menu {
+  .menu-btn {
     display: none;
   }
 
@@ -632,7 +692,7 @@ label {
 }
 
 /* Interactions */
-.menu:hover,
+.menu-btn:hover,
 .btn:hover {
   cursor: pointer;
 }
