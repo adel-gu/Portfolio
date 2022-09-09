@@ -944,6 +944,7 @@ label {
 .modal__footer .btn:hover .arrow-next {
   position: relative;
   left: 10px;
+}
 
 .msg {
   font-size: var(--fs-16);
