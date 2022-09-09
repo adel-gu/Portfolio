@@ -944,4 +944,24 @@ label {
 .modal__footer .btn:hover .arrow-next {
   position: relative;
   left: 10px;
+
+.msg {
+  font-size: var(--fs-16);
+  font-weight: 400;
+  display: block;
+  margin-bottom: 15px;
+  padding-inline: 5px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+.msg.success {
+  color: green;
+  border-color: green;
+}
+
+.msg.fail {
+  color: red;
+  border-color: red;
+
 }
