@@ -477,7 +477,7 @@ label {
 
 .top_btn.menu-btn {
   color: var(--primary-clr);
-  font-size: var(--fs-40);
+  font-size: var(--fs-20);
   position: absolute;
   top: 0.5em;
   right: 0;
@@ -543,6 +543,7 @@ label {
   .top_btn.menu-btn {
     position: relative;
     top: auto;
+    font-size: var(--fs-40);
   }
 
   .modal__body_buttons.direction {
