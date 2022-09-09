@@ -134,7 +134,7 @@ const projects = [project1, project2, project3, project4, project5, project6];
 
 // span, pImgSrc, btnImgSrc1, btnImgSrc2
 function createModal(id) {
-  let pCardTemplate = `
+  const pCardTemplate = `
   <div class="overlay hidden">
       <article class="modal container">
         <div class="modal__header">
@@ -220,5 +220,4 @@ window.addEventListener('click', (e) => {
   if (e.target.getAttribute('data-id')) {
     createModal(e.target.getAttribute('data-id'));
   }
-  return;
 });
