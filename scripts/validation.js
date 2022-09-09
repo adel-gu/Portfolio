@@ -1,6 +1,6 @@
 const form = document.forms[0];
 const email = form.email;
-const msg = form.message;
+const msg = form.querySelector(".msg");
 
 function validator(e) {
   e.preventDefault();
