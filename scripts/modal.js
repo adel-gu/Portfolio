@@ -1,13 +1,13 @@
 const project1 = {
   id: 1,
-  title: "Project name goes here",
-  features: ["HTML/CSS", "Ruby on Rails", "JavaScript"],
-  mainImg: "./assets/images/projects-section/project1.png",
+  title: 'Project name goes here',
+  features: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
+  mainImg: './assets/images/projects-section/project1.png',
   sideImgs: [
-    "./assets/images/projects-section/project1.png",
-    "./assets/images/projects-section/project1.png",
-    "./assets/images/projects-section/project1.png",
-    "./assets/images/projects-section/project1.png",
+    './assets/images/projects-section/project1.png',
+    './assets/images/projects-section/project1.png',
+    './assets/images/projects-section/project1.png',
+    './assets/images/projects-section/project1.png',
   ],
   description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
   eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -17,19 +17,19 @@ const project1 = {
   amet, consectetur adipiscing elit, sed do eiusmod tempor
   incididunt ut labore et dolore magna aliqua. Ut enim ad minim
   veniam, quis nostrud exercitation ullamco laboris nisi.`,
-  links: ["#", "#"],
+  links: ['#', '#'],
 };
 
 const project2 = {
   id: 2,
-  title: "Project name goes here",
-  features: ["HTML/CSS", "Ruby on Rails", "JavaScript"],
-  mainImg: "./assets/images/projects-section/project2.png",
+  title: 'Project name goes here',
+  features: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
+  mainImg: './assets/images/projects-section/project2.png',
   sideImgs: [
-    "./assets/images/projects-section/project2.png",
-    "./assets/images/projects-section/project2.png",
-    "./assets/images/projects-section/project2.png",
-    "./assets/images/projects-section/project2.png",
+    './assets/images/projects-section/project2.png',
+    './assets/images/projects-section/project2.png',
+    './assets/images/projects-section/project2.png',
+    './assets/images/projects-section/project2.png',
   ],
   description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
   eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -39,19 +39,19 @@ const project2 = {
   amet, consectetur adipiscing elit, sed do eiusmod tempor
   incididunt ut labore et dolore magna aliqua. Ut enim ad minim
   veniam, quis nostrud exercitation ullamco laboris nisi.`,
-  links: ["#", "#"],
+  links: ['#', '#'],
 };
 
 const project3 = {
   id: 3,
-  title: "Project name goes here",
-  features: ["HTML/CSS", "Ruby on Rails", "JavaScript"],
-  mainImg: "./assets/images/projects-section/project3.png",
+  title: 'Project name goes here',
+  features: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
+  mainImg: './assets/images/projects-section/project3.png',
   sideImgs: [
-    "./assets/images/projects-section/project3.png",
-    "./assets/images/projects-section/project3.png",
-    "./assets/images/projects-section/project3.png",
-    "./assets/images/projects-section/project3.png",
+    './assets/images/projects-section/project3.png',
+    './assets/images/projects-section/project3.png',
+    './assets/images/projects-section/project3.png',
+    './assets/images/projects-section/project3.png',
   ],
   description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
   eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -61,19 +61,19 @@ const project3 = {
   amet, consectetur adipiscing elit, sed do eiusmod tempor
   incididunt ut labore et dolore magna aliqua. Ut enim ad minim
   veniam, quis nostrud exercitation ullamco laboris nisi.`,
-  links: ["#", "#"],
+  links: ['#', '#'],
 };
 
 const project4 = {
   id: 4,
-  title: "Project name goes here",
-  features: ["HTML/CSS", "Ruby on Rails", "JavaScript"],
-  mainImg: "./assets/images/projects-section/project4.png",
+  title: 'Project name goes here',
+  features: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
+  mainImg: './assets/images/projects-section/project4.png',
   sideImgs: [
-    "./assets/images/projects-section/project4.png",
-    "./assets/images/projects-section/project4.png",
-    "./assets/images/projects-section/project4.png",
-    "./assets/images/projects-section/project4.png",
+    './assets/images/projects-section/project4.png',
+    './assets/images/projects-section/project4.png',
+    './assets/images/projects-section/project4.png',
+    './assets/images/projects-section/project4.png',
   ],
   description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
   eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -83,19 +83,19 @@ const project4 = {
   amet, consectetur adipiscing elit, sed do eiusmod tempor
   incididunt ut labore et dolore magna aliqua. Ut enim ad minim
   veniam, quis nostrud exercitation ullamco laboris nisi.`,
-  links: ["#", "#"],
+  links: ['#', '#'],
 };
 
 const project5 = {
   id: 5,
-  title: "Project name goes here",
-  features: ["HTML/CSS", "Ruby on Rails", "JavaScript"],
-  mainImg: "./assets/images/projects-section/project5.png",
+  title: 'Project name goes here',
+  features: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
+  mainImg: './assets/images/projects-section/project5.png',
   sideImgs: [
-    "./assets/images/projects-section/project5.png",
-    "./assets/images/projects-section/project5.png",
-    "./assets/images/projects-section/project5.png",
-    "./assets/images/projects-section/project5.png",
+    './assets/images/projects-section/project5.png',
+    './assets/images/projects-section/project5.png',
+    './assets/images/projects-section/project5.png',
+    './assets/images/projects-section/project5.png',
   ],
   description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
   eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -105,19 +105,19 @@ const project5 = {
   amet, consectetur adipiscing elit, sed do eiusmod tempor
   incididunt ut labore et dolore magna aliqua. Ut enim ad minim
   veniam, quis nostrud exercitation ullamco laboris nisi.`,
-  links: ["#", "#"],
+  links: ['#', '#'],
 };
 
 const project6 = {
   id: 6,
-  title: "Project name goes here",
-  features: ["HTML/CSS", "Ruby on Rails", "JavaScript"],
-  mainImg: "./assets/images/projects-section/project6.png",
+  title: 'Project name goes here',
+  features: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
+  mainImg: './assets/images/projects-section/project6.png',
   sideImgs: [
-    "./assets/images/projects-section/project6.png",
-    "./assets/images/projects-section/project6.png",
-    "./assets/images/projects-section/project6.png",
-    "./assets/images/projects-section/project6.png",
+    './assets/images/projects-section/project6.png',
+    './assets/images/projects-section/project6.png',
+    './assets/images/projects-section/project6.png',
+    './assets/images/projects-section/project6.png',
   ],
   description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
   eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -127,7 +127,7 @@ const project6 = {
   amet, consectetur adipiscing elit, sed do eiusmod tempor
   incididunt ut labore et dolore magna aliqua. Ut enim ad minim
   veniam, quis nostrud exercitation ullamco laboris nisi.`,
-  links: ["#", "#"],
+  links: ['#', '#'],
 };
 
 const projects = [project1, project2, project3, project4, project5, project6];
@@ -205,14 +205,20 @@ function createModal(id) {
   `;
 
   document.body.innerHTML += pCardTemplate;
-  const modal = document.querySelector(".overlay");
-  modal.classList.remove("hidden");
-  document.body.classList.add("overflow-y");
+  const modal = document.querySelector('.overlay');
+  modal.classList.remove('hidden');
+  document.body.classList.add('overflow-y');
 
-  const close = document.querySelector(".top_btn");
-  close.addEventListener("click", () => {
+  const close = document.querySelector('.top_btn');
+  close.addEventListener('click', () => {
     document.body.removeChild(modal);
-    console.log("what's wrong hah????");
-    document.body.classList.remove("overflow-y");
+    document.body.classList.remove('overflow-y');
   });
 }
+
+window.addEventListener('click', (e) => {
+  if (e.target.getAttribute('data-id')) {
+    createModal(e.target.getAttribute('data-id'));
+  }
+  return;
+});

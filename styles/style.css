@@ -270,8 +270,8 @@ label {
 
 .slide_prev,
 .slide_next {
-  background: rgb(255,249,249);
-  background: linear-gradient(90deg, rgba(255,249,249,0) 0%, rgba(129,128,128,0.6811099439775911) 100%);
+  background: rgb(255, 249, 249);
+  background: linear-gradient(90deg, rgba(255, 249, 249, 0) 0%, rgba(129, 128, 128, 0.6811099439775911) 100%);
   color: var(--secondary-clr);
   font-size: var(--fs-40);
   position: absolute;
@@ -302,7 +302,7 @@ label {
   border: 1px solid var(--primary-clr);
 }
 
-/* modal Project*/
+/* modal Project */
 .modal__header_title {
   position: relative;
   padding-top: 3.5625em;
@@ -322,7 +322,7 @@ label {
 }
 
 .slide_prev {
-  background: linear-gradient(90deg, rgba(129,128,128,0.6811099439775911) 0%, rgba(255,249,249,0) 100%);
+  background: linear-gradient(90deg, rgba(129, 128, 128, 0.6811099439775911) 0%, rgba(255, 249, 249, 0) 100%);
 }
 
 .slide_next {
@@ -362,11 +362,20 @@ label {
   display: none;
 }
 
+.btn {
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+  transition: background color;
+  transition-duration: 200ms;
+  transition-timing-function: ease-in;
+}
+
 .modal__footer .btn {
   align-items: center;
 }
 
-.modal__footer .btn .arrow{
+.modal__footer .btn .arrow {
   font-size: var(--fs-20);
   margin-bottom: 5px;
 }
@@ -474,15 +483,6 @@ label {
   right: 0;
 }
 
-.btn {
-  align-items: center;
-  justify-content: center;
-  gap: 0.5em;
-  transition: background color;
-  transition-duration: 200ms;
-  transition-timing-function: ease-in;
-}
-
 .primary-btn {
   background: var(--primary-clr);
   border-color: var(--primary-clr);
@@ -535,7 +535,7 @@ label {
   .modal {
     height: 80vh;
   }
-  
+
   .modal__header_title {
     padding-top: 0;
   }
@@ -564,7 +564,7 @@ label {
   }
 }
 
-@media screen and (min-width: 1024px){
+@media screen and (min-width: 1024px) {
   h1.top_title {
     font-size: var(--fs-60);
     width: auto;
@@ -921,13 +921,13 @@ label {
 }
 
 .modal__body_buttons .btn:hover,
-.modal__body_buttons .btn:hover {
+.modal__body_buttons .btn:focus {
   background: var(--primary-clr);
 }
 
 .modal__body_buttons .btn:hover img,
-.modal__body_buttons .btn:hover img{
-  filter: invert(100%); 
+.modal__body_buttons .btn:focus img {
+  filter: invert(100%);
 }
 
 .modal__footer .btn:hover,
@@ -935,12 +935,12 @@ label {
   color: var(--primary-clr);
 }
 
-.modal__footer .btn:hover .arrow-prev{
+.modal__footer .btn:hover .arrow-prev {
   position: relative;
   right: 10px;
 }
 
-.modal__footer .btn:hover .arrow-next{
+.modal__footer .btn:hover .arrow-next {
   position: relative;
   left: 10px;
 }
