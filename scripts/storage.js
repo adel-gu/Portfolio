@@ -13,7 +13,7 @@ function getData() {
   return userData;
 }
 
-function generateData(e) {
+function generateData() {
   if (localStorage.getItem('storage')) {
     window.localStorage.clear();
   }
