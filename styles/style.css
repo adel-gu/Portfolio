@@ -20,8 +20,8 @@
   --placeholder-clr: #7d7c84;
 
   /* fonts */
-  --ff-headings: 'Playfair Display', serif;
-  --ff-normal: 'Poppins', sans-serif;
+  --ff-headings: "Playfair Display", serif;
+  --ff-normal: "Poppins", sans-serif;
 
   /* font-size */
   --fs-75: 4.688rem;
@@ -203,7 +203,8 @@ label {
   width: 100%;
   padding: 150px 20px;
   background: #fff;
-  background-image: url('../assets/menu/bg-top.svg'), url('../assets/menu/bg-bottom.svg'), url('../assets/menu/dots.svg'), url('../assets/menu/dots.svg');
+  background-image: url("../assets/menu/bg-top.svg"), url("../assets/menu/bg-bottom.svg"),
+    url("../assets/menu/dots.svg"), url("../assets/menu/dots.svg");
   background-position: left top, bottom right, 80% 10%, 20% 80%;
   background-size: auto, contain, auto, auto;
   background-repeat: no-repeat;
@@ -347,14 +348,14 @@ label {
   padding-block: 2em;
 }
 
-.modal__body_buttons button {
+.modal__body_buttons a {
   border: 2px solid var(--primary-clr);
   margin-bottom: 2em;
   flex: 1;
   color: var(--primary-clr);
 }
 
-.modal__body_buttons button img {
+.modal__body_buttons a img {
   margin-left: auto;
 }
 

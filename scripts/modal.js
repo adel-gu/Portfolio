@@ -1,23 +1,13 @@
 const project1 = {
   id: 1,
   title: 'Project name goes here',
-  features: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
-  mainImg: './assets/images/projects-section/project1.png',
-  sideImgs: [
-    './assets/images/projects-section/project1.png',
-    './assets/images/projects-section/project1.png',
-    './assets/images/projects-section/project1.png',
-    './assets/images/projects-section/project1.png',
+  features: ['HTML/CSS', 'SASS', 'Bootstrap', 'JavaScript'],
+  mainImg: './assets/thumbs/thumb-min.png',
+  description: `The Website is for a Software Engineering Agency Under the Name of DevBox, one of many main activities of this Agency is hosting Global Events where a lot of passionate and creative people could meet and share opinions about tech Topics, The coming Global summit DevBox is hosting on 21/10/2022.`,
+  links: [
+    'https://github.com/adel-gu/DevBox-website',
+    'https://adel-gu.github.io/DevBox-website/',
   ],
-  description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-  eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-  enim ad minim veniam, quis nostrud exercitation ullamco laboris
-  <br /><br />
-  nisi Ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit
-  amet, consectetur adipiscing elit, sed do eiusmod tempor
-  incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-  veniam, quis nostrud exercitation ullamco laboris nisi.`,
-  links: ['#', '#'],
 };
 
 const project2 = {
@@ -148,45 +138,32 @@ function createModal(id) {
             <li class="feature">${projects[id].features[0]}</li>
             <li class="feature">${projects[id].features[1]}</li>
             <li class="feature">${projects[id].features[2]}</li>
+            <li class="feature">${projects[id].features[3]}</li>
           </ul>
         </div>
         <div class="modal__body">
           <div class="modal__body_slide">
             <div class="slide_main">
-              <span class="slide_prev flex">&lt;</span>
+              
               <div class="slide_show">
                 <img src="${projects[id].mainImg}" />
               </div>
-              <span class="slide_next flex">&gt;</span>
+              
             </div>
-            <ul class="slide_items flex" role="list">
-              <li class="slide_item active">
-                <img src="${projects[id].sideImgs[0]}" alt="project" />
-              </li>
-              <li class="slide_item">
-                <img src="${projects[id].sideImgs[1]}" alt="project" />
-              </li>
-              <li class="slide_item">
-                <img src="${projects[id].sideImgs[2]}" alt="project" />
-              </li>
-              <li class="slide_item">
-                <img src="${projects[id].sideImgs[3]}" alt="project" />
-              </li>
-            </ul>
           </div>
           <div class="modal__body_wrapper">
             <div class="modal__body_description">
               <p>${projects[id].description}</p>
             </div>
             <div class="modal__body_buttons flex direction">
-              <button class="btn secondary-btn flex" type="button">
-                <span>See Live</span>
+              <a href="https://adel-gu.github.io/DevBox-website/" class="btn secondary-btn flex" type="button">
+                  <span>See Live</span>
                 <img src="./assets/project-ic_link.svg" alt="see this project" />
-              </button>
-              <button class="btn secondary-btn flex" type="button">
+              </a>
+              <a href="https://github.com/adel-gu/DevBox-website" class="btn secondary-btn flex" type="button">
                 <span>See Source</span>
                 <img src="./assets/github-dark.svg" alt="see this project" />
-              </button>
+              </a>
             </div>
             <div class="modal__footer flex space-between">
               <button class="btn secondary-btn flex">
