@@ -675,13 +675,36 @@ label {
     grid-template-columns: 1fr 1fr 0.5fr 1fr;
   }
 
-  /* Grid Span */
-  .span-2 {
-    grid-column: span 2;
+  /* Grid items */
+  .item1 {
+    grid-area: 1 / 1 / 2 / 2;
   }
-
-  .span-3 {
-    grid-column: span 3;
+  .item2 {
+    grid-area: 1 / 2 / 2 / 5;
+  }
+  .item3 {
+    grid-area: 2 / 1 / 3 / 2;
+  }
+  .item4 {
+    grid-area: 2 / 2 / 3 / 4;
+  }
+  .item5 {
+    grid-area: 2 / 4 / 3 / 5;
+  }
+  .item6 {
+    grid-area: 3 / 1 / 4 / 3;
+  }
+  .item7 {
+    grid-area: 3 / 3 / 4 / 4;
+  }
+  .item8 {
+    grid-area: 3 / 4 / 4 / 5;
+  }
+  .item9 {
+    grid-area: 4 / 1 / 5 / 3;
+  }
+  .item10 {
+    grid-area: 4 / 3 / 5 / 5;
   }
 
   /* Positions */
