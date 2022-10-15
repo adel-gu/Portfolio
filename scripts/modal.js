@@ -3,7 +3,7 @@ const project1 = {
   title: 'Project name goes here',
   features: ['HTML/CSS', 'SASS', 'Bootstrap', 'JavaScript'],
   mainImg: './assets/thumbs/thumb-min.png',
-  description: `The Website is for a Software Engineering Agency Under the Name of DevBox, one of many main activities of this Agency is hosting Global Events where a lot of passionate and creative people could meet and share opinions about tech Topics, The coming Global summit DevBox is hosting on 21/10/2022.`,
+  description: 'The Website is for a Software Engineering Agency Under the Name of DevBox, one of many main activities of this Agency is hosting Global Events where a lot of passionate and creative people could meet and share opinions about tech Topics, The coming Global summit DevBox is hosting on 21/10/2022.',
   links: [
     'https://github.com/adel-gu/DevBox-website',
     'https://adel-gu.github.io/DevBox-website/',
