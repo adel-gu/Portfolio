@@ -691,6 +691,11 @@ label {
     grid-area: 2 / 1 / 3 / 2;
   }
 
+  .item3>div {
+    top: 100%;
+    transform: translateY(-100%);
+  }
+
   .item4 {
     grid-area: 2 / 2 / 3 / 4;
   }
@@ -709,6 +714,12 @@ label {
 
   .item8 {
     grid-area: 3 / 4 / 4 / 5;
+    background: url("../assets/desktop/projects-section/tow-squars.svg") no-repeat right 65%;
+    background-size: 90%;
+  }
+
+  .item8>div {
+    top: -40%;
   }
 
   .item9 {
@@ -717,6 +728,7 @@ label {
 
   .item10 {
     grid-area: 4 / 3 / 5 / 5;
+    width: 70%;
   }
 
   /* Positions */
@@ -726,10 +738,6 @@ label {
 
   .pos-absolute {
     position: absolute;
-  }
-
-  .high-top-pos {
-    top: -40%;
   }
 
   .top-pos {
@@ -759,11 +767,6 @@ label {
     width: 100%;
   }
 
-  .project-bg3 {
-    background: url("../assets/desktop/projects-section/tow-squars.svg") no-repeat right 65%;
-    background-size: 90%;
-  }
-
   .project-card {
     width: 100%;
   }
@@ -771,10 +774,6 @@ label {
   .phone-arrow {
     display: none;
     transition: all 200ms ease-in;
-  }
-
-  .width-30 {
-    width: 70%;
   }
 
   /* About Section */
