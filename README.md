@@ -34,7 +34,7 @@ Click on the `code` green button, and from the dropdown list chose `Download ZIP
 ## Built With
 - HTML5 & CSS3
 
-## Live Demo (if available)
+## Live Demo
 [Experience a Live Demo 🚀](https://adel-gu.github.io/Portfolio/)
 
 ## Authors
