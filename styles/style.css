@@ -691,7 +691,7 @@ label {
     grid-area: 2 / 1 / 3 / 2;
   }
 
-  .item3>div {
+  .item3 > div {
     top: 100%;
     transform: translateY(-100%);
   }
@@ -718,7 +718,7 @@ label {
     background-size: 90%;
   }
 
-  .item8>div {
+  .item8 > div {
     top: -40%;
   }
 
