@@ -203,8 +203,11 @@ label {
   width: 100%;
   padding: 150px 20px;
   background: #fff;
-  background-image: url("../assets/menu/bg-top.svg"), url("../assets/menu/bg-bottom.svg"),
-    url("../assets/menu/dots.svg"), url("../assets/menu/dots.svg");
+  background-image:
+    url("../assets/menu/bg-top.svg"),
+    url("../assets/menu/bg-bottom.svg"),
+    url("../assets/menu/dots.svg"),
+    url("../assets/menu/dots.svg");
   background-position: left top, bottom right, 80% 10%, 20% 80%;
   background-size: auto, contain, auto, auto;
   background-repeat: no-repeat;
