@@ -1,0 +1,59 @@
+.flex {
+  display: flex;
+}
+
+/* Rename it to flex-column */
+.flex-col {
+  flex-direction: column;
+}
+
+.grid {
+  display: grid;
+}
+
+.display-none {
+  display: none;
+}
+
+.display-block {
+  display: block;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.body-decoration {
+  background: url("../assets/images/image_geometry_1.svg") no-repeat left top;
+}
+
+/* Sections */
+.section {
+  padding-block: 1.875em;
+}
+
+/* Container */
+.container {
+  padding-inline: 1em;
+}
+
+/* Buttons */
+.primary-btn {
+  background: var(--primary-clr);
+  border-color: var(--primary-clr);
+  padding-block: 0.75em;
+  width: 100%;
+}
+
+.secondary-btn {
+  background: none;
+  border-color: var(--secondary-clr);
+  padding: 0.625em;
+}
+
+/* Media Queries */
+@media screen and (min-width: 1024px) {
+  .body-decoration {
+    background: none;
+  }
+}

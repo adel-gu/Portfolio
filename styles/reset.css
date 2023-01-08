@@ -1,0 +1,87 @@
+/* !!! Reset Default CSS */
+* {
+  box-sizing: border-box;
+  font: inherit;
+  line-height: 1.5;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+ul {
+  list-style-type: disc;
+}
+
+ul[role="list"] {
+  list-style-type: none;
+}
+
+img {
+  width: 100%;
+}
+
+button img,
+a img {
+  width: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+input,
+textarea {
+  width: 100%;
+}
+
+/* !!! Typography Style */
+body {
+  color: var(--primary-clr);
+  font-family: var(--ff-normal);
+  font-size: var(--fs-14);
+  font-weight: var(--fw-400);
+}
+
+h1,
+h2 {
+  color: var(--primary-clr);
+  font-family: var(--ff-headings);
+  font-size: var(--fs-50);
+  font-weight: var(--fw-400);
+  margin-bottom: 0.25em;
+}
+
+h3 {
+  color: var(--secondary-clr);
+  font-size: var(--fs-20);
+  font-weight: var(--fw-300);
+}
+
+h4 {
+  color: var(--secondary-clr);
+  font-size: var(--fs-20);
+  font-weight: var(--fw-800);
+}
+
+button {
+  color: var(--secondary-clr);
+  font-size: var(--fs-16);
+  font-family: var(--fw-500);
+  border-width: 1px;
+  border-style: solid;
+}
+
+.input::placeholder {
+  color: var(--placeholder-clr);
+  font-size: var(--fs-14);
+  font-weight: var(--fw-400);
+}
+
+label {
+  color: var(--label-clr);
+  font-size: var(--fs-10);
+  font-weight: var(--fw-400);
+}
