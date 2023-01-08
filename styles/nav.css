@@ -43,6 +43,8 @@
 @media screen and (min-width: 1024px) {
   .header-section {
     justify-content: center;
+    padding-bottom: 1.25em;
+    border-bottom: 2px solid var(--br-header);
   }
 
   .menu-btn {
