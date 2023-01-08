@@ -1,0 +1,45 @@
+/* Mobile Styling */
+.header-section {
+  justify-content: flex-end;
+  padding-top: 1.25em;
+  padding-right: 1em;
+  position: relative;
+}
+
+.nav-list {
+  display: none;
+  text-align: center;
+  width: 100%;
+}
+
+.toggled-menu {
+  width: 100%;
+  min-height: 100vh;
+  padding: 250px 20px;
+  background: #fff;
+  background-image:
+    url("../assets/menu/bg-top.svg"),
+    url("../assets/menu/bg-bottom.svg"),
+    url("../assets/menu/dots.svg"),
+    url("../assets/menu/dots.svg");
+  background-position: left top, bottom right, 80% 10%, 20% 80%;
+  background-size: auto, contain, auto, auto;
+  background-repeat: no-repeat;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.nav-link {
+  color: #3a4a42;
+  display: block;
+  font-size: var(--fs-32);
+  font-weight: var(--fw-600);
+  margin-bottom: 20px;
+}
+
+/* Desktop Styling */
+
+/* Media Queries */
