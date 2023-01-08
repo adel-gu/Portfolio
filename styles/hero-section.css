@@ -1,0 +1,12 @@
+.hero-section {
+  padding-top: 4.375em;
+  gap: 2em;
+}
+
+.hero-img_desktop {
+  display: none;
+}
+
+.hero-section .paragraph {
+  margin-bottom: 2em;
+}
