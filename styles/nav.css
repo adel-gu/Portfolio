@@ -39,6 +39,30 @@
   margin-bottom: 20px;
 }
 
-/* Desktop Styling */
-
 /* Media Queries */
+@media screen and (min-width: 1024px) {
+  .header-section {
+    justify-content: center;
+  }
+
+  .menu-btn {
+    display: none
+  }
+
+  .nav-list {
+    display: flex;
+    gap: 3.125em;
+  }
+
+  .nav-list a {
+    color: var(--primary-clr);
+    font-size: var(--fs-16);
+    transition: all 200ms ease-in;
+  }
+}
+
+/* Interaction */
+.nav-list a:hover,
+.nav-list a:focus {
+  text-decoration: underline;
+}
