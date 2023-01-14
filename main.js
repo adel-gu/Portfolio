@@ -1,4 +1,4 @@
-import NavigationMenu from './scripts/modules/nav.js';
+import NavigationMenu from './scripts/nav.js';
 
 const menuBtn = document.querySelector('.menu-btn');
 const menuBtnIcons = menuBtn.querySelectorAll('.menu-btn img');

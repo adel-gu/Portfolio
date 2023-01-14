@@ -10,3 +10,34 @@
 .hero-section .paragraph {
   margin-bottom: 2em;
 }
+
+/* Media Quieries */
+
+/* Small tables and large phones */
+@media screen and (min-width: 768px) {
+  .hero-content {
+    border: 5px solid red;
+    text-align: center;
+    width: 70%;
+    margin-inline: auto;
+  }
+}
+
+/* Large tablet and laptop */
+@media screen and (min-width: 1024px) {
+  .hero-section {
+    flex-direction: row;
+  }
+
+  .hero-content {
+
+  }
+
+  .hero-img_phone {
+    display: none;
+  }
+
+  .hero-img_desktop {
+    display: block;
+  }
+}
