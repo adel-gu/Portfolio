@@ -224,12 +224,17 @@ label {
   width: 100%;
 }
 
+.nav-link-des {
+  color: var(--primary-clr);
+  position: relative;
+  /* transition: content 5000ms ease-in-out; */
+}
+
 .nav-link {
-  color: #3a4a42;
   display: block;
   font-size: 32px;
-  font-weight: 600;
-  margin-bottom: 40px;
+  font-weight: 400;
+  margin-top: 40px;
   margin-bottom: 20px;
 }
 
@@ -373,6 +378,11 @@ label {
   transition: background color;
   transition-duration: 200ms;
   transition-timing-function: ease-in;
+}
+
+a.btn {
+  color: white;
+  border: 2px solid var(--primary-clr)
 }
 
 .modal__footer .btn {
@@ -999,4 +1009,24 @@ label {
 .msg.fail {
   color: red;
   border-color: red;
+}
+
+.desActiveLink::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 70%;
+  height: 2px;
+  background-color: var(--primary-clr);
+}
+
+.nav-link-des:hover::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 70%;
+  height: 2px;
+  background-color: var(--primary-clr);
 }

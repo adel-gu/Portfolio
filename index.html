@@ -11,11 +11,11 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles/style.css" />
-    <script src="main.js" defer></script>
+    <script src="main.js" type="module" defer></script>
     <script src="scripts/modal.js" defer></script>
     <script src="scripts/validation.js" defer></script>
     <script src="scripts/storage.js" defer></script>
-    <title>Adel Guitoun - Portfolio</title>
+    <title>Adel Guitoun</title>
   </head>
   <body class="bg-decoration">
     <!-- Header Section -->
@@ -28,16 +28,16 @@
 
         <ul class="nav-list hidden" role="list">
           <li>
-            <a href="#hero-section">Hello</a>
+            <a href="#hero-section" class="nav-link-des">Hello</a>
           </li>
           <li>
-            <a href="#project-section">Portfolio</a>
+            <a href="#project-section" class="nav-link-des">Portfolio</a>
           </li>
           <li>
-            <a href="#about-section">About</a>
+            <a href="#about-section" class="nav-link-des">About</a>
           </li>
           <li>
-            <a href="#contact-section">Contact</a>
+            <a href="#contact-section" class="nav-link-des">Contact</a>
           </li>
         </ul>
       </nav>
@@ -283,10 +283,6 @@
               enim ad minim veniam, quis nostrud exercitation ullamco laboris
               nisi ut aliquip ea eiusmod
             </p>
-            <button class="btn primary-btn flex" type="button">
-              <span>Get my CV</span>
-              <img src="./assets/icons/download-button.svg" alt="download cv" />
-            </button>
           </div>
           <div class="skills-container">
             <ul role="list" class="skills-list grid">
@@ -393,7 +389,10 @@
         </div>
 
         <div class="container bottom-footer-container flex direction">
-          <a class="link flex" href="#">
+          <a
+            class="link flex"
+            href="https://drive.google.com/file/d/1e5_B2d5NE654HaEGCeRsGoVSKuZnzbQ6/view?usp=share_link"
+          >
             <span>Get my Resume</span>
             <img src="./assets/footer-section/ic-get-cv.svg" alt="get cv" />
           </a>
