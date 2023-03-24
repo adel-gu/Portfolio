@@ -231,6 +231,7 @@ label {
 }
 
 .nav-link {
+  color: var(--primary-clr);
   display: block;
   font-size: 32px;
   font-weight: 400;

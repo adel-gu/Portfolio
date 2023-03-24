@@ -5,7 +5,6 @@ const menuBtnIcons = menuBtn.querySelectorAll('.menu-btn img');
 const menu = document.querySelector('.nav-list');
 const menuLinks = menu.querySelectorAll('.nav-list a');
 const body = document.querySelector('body');
-const navDesLinks = document.querySelectorAll('.nav-link-des');
 
 function showMenu() {
   body.classList.toggle('overflow');
@@ -16,6 +15,7 @@ function showMenu() {
   });
 
   menuLinks.forEach((link) => {
+    link.classList.remove('nav-link-des');
     link.classList.toggle('nav-link');
   });
 }
@@ -29,6 +29,7 @@ function hideMenu() {
   });
 
   menuLinks.forEach((link) => {
+    link.classList.add('nav-link-des');
     link.classList.remove('nav-link');
   });
 }
@@ -38,4 +39,4 @@ menuLinks.forEach((link) => {
   link.addEventListener('click', hideMenu);
 });
 
-activeLink(navDesLinks);
+activeLink(menuLinks);
