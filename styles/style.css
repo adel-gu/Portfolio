@@ -381,10 +381,6 @@ label {
   transition-timing-function: ease-in;
 }
 
-a.btn {
-  color: white;
-  border: 2px solid var(--primary-clr)
-}
 
 .modal__footer .btn {
   align-items: center;
@@ -506,6 +502,7 @@ a.btn {
 }
 
 .secondary-btn {
+  color: var(--secondary-clr);
   background: none;
   border-color: var(--secondary-clr);
   padding: 0.625em;
@@ -573,7 +570,7 @@ a.btn {
   }
 
   .overlay {
-    max-width: 1400px;
+    max-width: 100%;
     padding: 4.375em;
     margin-inline: auto;
     z-index: 100;
@@ -727,6 +724,7 @@ a.btn {
     grid-area: 3 / 4 / 4 / 5;
     background: url("../assets/desktop/projects-section/tow-squars.svg") no-repeat right 65%;
     background-size: 90%;
+    top: 20%;
   }
 
   .item8 > div {
@@ -740,6 +738,14 @@ a.btn {
   .item10 {
     grid-area: 4 / 3 / 5 / 5;
     width: 70%;
+  }
+
+  .item3 h3,
+  .item5 h3,
+  .item6 h3,
+  .item8 h3,
+  .item10 h3 {
+    font-size: 1.5rem;
   }
 
   /* Positions */

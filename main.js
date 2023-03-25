@@ -1,10 +1,18 @@
 import { activeLink } from './modules/desNavActive.js';
+import {
+  projects,
+  projectTemplate,
+  setProjectSkills,
+} from './modules/projectCard.js';
 
 const menuBtn = document.querySelector('.menu-btn');
 const menuBtnIcons = menuBtn.querySelectorAll('.menu-btn img');
 const menu = document.querySelector('.nav-list');
 const menuLinks = menu.querySelectorAll('.nav-list a');
 const body = document.querySelector('body');
+const projectContainer = document.querySelector('.projects-lists');
+const projectSkillsContainer =
+  document.getElementsByClassName('features-container');
 
 function showMenu() {
   body.classList.toggle('overflow');
@@ -37,6 +45,15 @@ function hideMenu() {
 menuBtn.addEventListener('click', showMenu);
 menuLinks.forEach((link) => {
   link.addEventListener('click', hideMenu);
+});
+
+projects.map((project) => {
+  projectContainer.innerHTML += projectTemplate(project);
+});
+
+[...projectSkillsContainer].forEach((skillContainer) => {
+  const id = skillContainer.dataset['id'];
+  setProjectSkills(id, skillContainer);
 });
 
 activeLink(menuLinks);

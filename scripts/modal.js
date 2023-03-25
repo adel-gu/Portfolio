@@ -3,7 +3,8 @@ const project1 = {
   title: 'Project name goes here',
   features: ['HTML/CSS', 'SASS', 'Bootstrap', 'JavaScript'],
   mainImg: './assets/thumbs/thumb-min.png',
-  description: 'The Website is for a Software Engineering Agency Under the Name of DevBox, one of many main activities of this Agency is hosting Global Events where a lot of passionate and creative people could meet and share opinions about tech Topics, The coming Global summit DevBox is hosting on 21/10/2022.',
+  description:
+    'The Website is for a Software Engineering Agency Under the Name of DevBox, one of many main activities of this Agency is hosting Global Events where a lot of passionate and creative people could meet and share opinions about tech Topics, The coming Global summit DevBox is hosting on 21/10/2022.',
   links: [
     'https://github.com/adel-gu/DevBox-website',
     'https://adel-gu.github.io/DevBox-website/',
@@ -144,11 +145,11 @@ function createModal(id) {
         <div class="modal__body">
           <div class="modal__body_slide">
             <div class="slide_main">
-              
+
               <div class="slide_show">
                 <img src="${projects[id].mainImg}" />
               </div>
-              
+
             </div>
           </div>
           <div class="modal__body_wrapper">
@@ -164,16 +165,6 @@ function createModal(id) {
                 <span>See Source</span>
                 <img src="./assets/github-dark.svg" alt="see this project" />
               </a>
-            </div>
-            <div class="modal__footer flex space-between">
-              <button class="btn secondary-btn flex">
-                <span class="arrow arrow-prev">&larr;</span>
-                <span>Previous project</span>
-              </button>
-              <button class="btn secondary-btn flex">
-                <span>Next project</span>
-                <span class="arrow arrow-next">&rarr;</span>
-              </button>
             </div>
           </div>
         </div>
