@@ -88,8 +88,7 @@ const projectSkills = {
   5: ['HTML5', 'CSS3', 'SASS', 'JavaScript'],
 };
 
-const projectTemplate = (project) => {
-  return `
+const projectTemplate = (project) => `
     <li class="${project.class} pos-relative flex direction">
       <div class="project-card pos-relative">
         <div class="project-img">
@@ -112,10 +111,9 @@ const projectTemplate = (project) => {
       </div>
     </li>
   `;
-};
 
 const setProjectSkills = (id, parentSkillsContainer) => {
-  projectSkills[id].map((skill) => {
+  projectSkills[id].forEach((skill) => {
     parentSkillsContainer.innerHTML += `<li class="feature">${skill}</li>`;
   });
 };
@@ -177,4 +175,6 @@ function createModal(id) {
   });
 }
 
-export { projects, projectTemplate, setProjectSkills, createModal };
+export {
+  projects, projectTemplate, setProjectSkills, createModal,
+};

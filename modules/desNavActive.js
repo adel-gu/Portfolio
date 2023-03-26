@@ -1,7 +1,11 @@
-// Array => Add class "active-link" to the active link and remove it from others.
+const removeActive = (links) => {
+  [...links].forEach((link) => {
+    link.classList.remove('desActiveLink');
+  });
+};
 
-export const activeLink = (links) => {
-  [...links].map((link) => {
+const activeLink = (links) => {
+  [...links].forEach((link) => {
     link.addEventListener('click', (e) => {
       removeActive(links);
 
@@ -10,8 +14,4 @@ export const activeLink = (links) => {
   });
 };
 
-const removeActive = (links) => {
-  [...links].map((link) => {
-    link.classList.remove('desActiveLink');
-  });
-};
+export default activeLink;

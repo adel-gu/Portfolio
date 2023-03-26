@@ -381,7 +381,7 @@ label {
   transition-timing-function: ease-in;
 }
 
-a.btn {
+a.primary-btn {
   display: flex;
   color: var(--secondary-clr);
   border: 1px solid var(--primary-clr)

@@ -1,4 +1,4 @@
-import { activeLink } from './modules/desNavActive.js';
+import activeLink from './modules/desNavActive.js';
 import {
   projects,
   projectTemplate,
@@ -12,8 +12,7 @@ const menu = document.querySelector('.nav-list');
 const menuLinks = menu.querySelectorAll('.nav-list a');
 const body = document.querySelector('body');
 const projectContainer = document.querySelector('.projects-lists');
-const projectSkillsContainer =
-  document.getElementsByClassName('features-container');
+const projectSkillsContainer = document.getElementsByClassName('features-container');
 const modalSkillsContainer = document.getElementsByClassName(
   'modal__header_bottom',
 );
@@ -51,12 +50,12 @@ menuLinks.forEach((link) => {
   link.addEventListener('click', hideMenu);
 });
 
-projects.map((project) => {
+projects.forEach((project) => {
   projectContainer.innerHTML += projectTemplate(project);
 });
 
 [...projectSkillsContainer].forEach((skillContainer) => {
-  const id = skillContainer.dataset['id'];
+  const { id } = skillContainer.dataset;
   setProjectSkills(id, skillContainer);
 });
 
@@ -66,7 +65,7 @@ window.addEventListener('click', (e) => {
   if (id) {
     createModal(id);
     [...modalSkillsContainer].forEach((skillContainer) => {
-      const id = skillContainer.dataset['id'];
+      const { id } = skillContainer.dataset;
       setProjectSkills(id, skillContainer);
     });
   }
