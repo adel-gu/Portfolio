@@ -227,6 +227,7 @@ label {
 .nav-link-des {
   color: var(--primary-clr);
   position: relative;
+
   /* transition: content 5000ms ease-in-out; */
 }
 
@@ -384,9 +385,8 @@ label {
 a.primary-btn {
   display: flex;
   color: var(--secondary-clr);
-  border: 1px solid var(--primary-clr)
+  border: 1px solid var(--primary-clr);
 }
-
 
 .modal__footer .btn {
   align-items: center;
