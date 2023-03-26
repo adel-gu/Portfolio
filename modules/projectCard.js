@@ -5,7 +5,7 @@ const projects = [
     description:
       'Cherry Rooms is a front-end React project designed for the purpose of booking rooms in hotels, motels, or any other accommodation service. This project provides an intuitive and user-friendly interface that allows users to easily browse and reserve rooms based on their preferences and availability. The project is built using React, HTML, CSS, and JavaScript, with the use of APIs to fetch data from the backend.',
     class: 'item2',
-    image: '../assets/projects/cherryrooms.png',
+    image: './assets/projects/cherryrooms.png',
     skills: ['React', 'Redux', 'TailwindCSS', 'Ruby on Rails'],
     links: {
       repo: 'https://github.com/adel-gu/Cherry-Rooms-front-end',
@@ -18,7 +18,7 @@ const projects = [
     description:
       'Fully Responsive Web app that fetch data from Meals DB API to show different delicious foods and many different recipes.',
     class: 'item3',
-    image: '../assets/projects/meals.png',
+    image: './assets/projects/meals.png',
     skills: ['JavaScript', 'HTML5', 'CSS3', 'Bootstrap', 'Webpack'],
     links: {
       repo: 'https://github.com/adel-gu/Meals-API',
@@ -31,7 +31,7 @@ const projects = [
     description:
       'A simple SPA consists of a home page that fetches and displays data about cryptocurrencies and their categories, and a details page where the user can interact with information about a specific cryptocurrency.',
     class: 'item5',
-    image: '../assets/projects/crypto.png',
+    image: './assets/projects/crypto.png',
     skills: ['React', 'Redux', 'React Bootstrap'],
     links: {
       repo: 'https://github.com/adel-gu/crypto-currency-market',
@@ -44,7 +44,7 @@ const projects = [
     description:
       'A web application for a company that provides commercial and scientific space travel services. The application will allow users to book rockets and join selected space missions.',
     class: 'item6',
-    image: '../assets/projects/spacex.png',
+    image: './assets/projects/spacex.png',
     skills: ['React', 'Redux', 'Bootstrap'],
     links: {
       repo: 'https://github.com/adel-gu/spaceX',
@@ -70,7 +70,7 @@ const projects = [
     description:
       'Devbox is a fully responsive website that offers information about the upcoming global conference in 2022 for startups and web development agencies. The website consists of two pages, a home page and an about page, both designed to provide visitors with all the necessary details about the event. The home page offers a brief introduction to the conference and its objectives, while the about page provides more in-depth information about the event, including the date, venue, and agenda. Whether your an entrepreneur or a developer, Devbox is the perfect resource for staying up-to-date on the latest industry news and trends.',
     class: 'item10',
-    image: '../assets/projects/devbox.png',
+    image: './assets/projects/devbox.png',
     skills: ['HTML5', 'CSS3', 'SASS', 'JavaScript'],
     links: {
       repo: 'https://github.com/adel-gu/DevBox-website',
