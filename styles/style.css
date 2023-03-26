@@ -641,7 +641,6 @@ a.primary-btn {
   .header-section {
     justify-content: center;
     padding-block: 2.375em;
-    border-bottom: 2px solid var(--br-header);
   }
 
   .nav-list {
@@ -1036,4 +1035,8 @@ a.primary-btn {
   width: 70%;
   height: 2px;
   background-color: var(--primary-clr);
+}
+
+.header-bottom-border {
+  border: 0.25px solid var(--br-header);
 }
