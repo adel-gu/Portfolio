@@ -35,7 +35,7 @@ Click on the `code` green button, and from the dropdown list chose `Download ZIP
 - HTML5 & CSS3
 
 ## Live Demo
-[Experience a Live Demo 🚀](https://adel-gu.github.io/Portfolio/)
+[Experience a Live Demo 🚀](https://adelguitoun.netlify.app/)
 
 ## Authors
 
