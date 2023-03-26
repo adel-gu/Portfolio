@@ -579,16 +579,14 @@ a.primary-btn {
   }
 }
 
+/* Large tablet and laptop */
 @media screen and (min-width: 1024px) {
+  /* Typography */
   h1.top_title {
     font-size: var(--fs-60);
     width: auto;
   }
-}
 
-/* Large tablet and laptop */
-@media screen and (min-width: 1024px) {
-  /* Typography */
   h1,
   h2 {
     font-size: var(--fs-75);
