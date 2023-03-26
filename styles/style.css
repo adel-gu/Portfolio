@@ -304,6 +304,7 @@ label {
 .features-container {
   gap: 0.5em;
   padding: 1em 0 1.25em 0;
+  flex-wrap: wrap;
 }
 
 .feature {
