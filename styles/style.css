@@ -621,7 +621,7 @@ a.primary-btn {
 
   .show-on-hover {
     opacity: 0;
-    transition: all 200ms ease-in;
+    transition: all .5s ease-in-out;
   }
 
   /* Body */
