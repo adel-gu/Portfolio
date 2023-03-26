@@ -8,40 +8,31 @@ import {
 
 const menuBtn = document.querySelector('.menu-btn');
 const menuBtnIcons = menuBtn.querySelectorAll('.menu-btn img');
-const menu = document.querySelector('.nav-list');
-const menuLinks = menu.querySelectorAll('.nav-list a');
+const menu = document.querySelector('.toggled-menu');
+const menuLinks = menu.querySelectorAll('.toggled-menu a');
 const body = document.querySelector('body');
 const projectContainer = document.querySelector('.projects-lists');
-const projectSkillsContainer = document.getElementsByClassName('features-container');
+const projectSkillsContainer =
+  document.getElementsByClassName('features-container');
 const modalSkillsContainer = document.getElementsByClassName(
   'modal__header_bottom',
 );
 
 function showMenu() {
   body.classList.toggle('overflow');
-  menu.classList.toggle('toggled-menu');
+  menu.classList.toggle('toggled-menu-top');
 
   menuBtnIcons.forEach((icon) => {
     icon.classList.toggle('hidden');
-  });
-
-  menuLinks.forEach((link) => {
-    link.classList.remove('nav-link-des');
-    link.classList.toggle('nav-link');
   });
 }
 
 function hideMenu() {
   body.classList.remove('overflow');
-  menu.classList.remove('toggled-menu');
+  menu.classList.remove('toggled-menu-top');
 
   menuBtnIcons.forEach((icon) => {
     icon.classList.toggle('hidden');
-  });
-
-  menuLinks.forEach((link) => {
-    link.classList.add('nav-link-des');
-    link.classList.remove('nav-link');
   });
 }
 

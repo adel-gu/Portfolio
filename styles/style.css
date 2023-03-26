@@ -213,10 +213,15 @@ label {
   background-repeat: no-repeat;
   display: block;
   position: absolute;
-  top: 0;
+  top: -100vh;
   left: 0;
   height: 100vh;
   z-index: 0;
+  transition: all .5s ease-in-out;
+}
+
+.toggled-menu-top {
+  top: 0;
 }
 
 .nav-list {
@@ -227,8 +232,6 @@ label {
 .nav-link-des {
   color: var(--primary-clr);
   position: relative;
-
-  /* transition: content 5000ms ease-in-out; */
 }
 
 .nav-link {
@@ -923,6 +926,11 @@ a.primary-btn {
   .hero-img_phone {
     display: none;
   }
+
+  .header-bottom-border {
+    border: 0.25px solid var(--br-header);
+    display: block;
+  }
 }
 
 /* Interactions */
@@ -1035,8 +1043,4 @@ a.primary-btn {
   width: 70%;
   height: 2px;
   background-color: var(--primary-clr);
-}
-
-.header-bottom-border {
-  border: 0.25px solid var(--br-header);
 }
