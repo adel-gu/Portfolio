@@ -91,6 +91,10 @@ body {
   position: relative;
 }
 
+footer {
+  background: #1a2236;
+}
+
 h1,
 h2 {
   color: var(--primary-clr);
@@ -217,7 +221,7 @@ label {
   left: 0;
   height: 100vh;
   z-index: 0;
-  transition: all .5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .toggled-menu-top {
@@ -621,7 +625,7 @@ a.primary-btn {
 
   .show-on-hover {
     opacity: 0;
-    transition: all .5s ease-in-out;
+    transition: all 0.5s ease-in-out;
   }
 
   /* Body */
