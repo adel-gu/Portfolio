@@ -10,6 +10,7 @@ const menuBtn = document.querySelector('.menu-btn');
 const menuBtnIcons = menuBtn.querySelectorAll('.menu-btn img');
 const menu = document.querySelector('.toggled-menu');
 const menuLinks = menu.querySelectorAll('.toggled-menu a');
+const desNavLinks = document.querySelectorAll('.nav-link-des');
 const body = document.querySelector('body');
 const projectContainer = document.querySelector('.projects-lists');
 const projectSkillsContainer =
@@ -62,4 +63,6 @@ window.addEventListener('click', (e) => {
   }
 });
 
-activeLink(menuLinks);
+console.log(desNavLinks);
+
+activeLink(desNavLinks);
