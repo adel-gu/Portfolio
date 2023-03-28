@@ -594,14 +594,15 @@ a.primary-btn {
   }
 
   #project-section {
-    z-index:  10;
+    z-index: 10;
   }
 
   .nav-list-des {
     position: fixed;
-    z-index:  11;
+    z-index: 11;
     background: #fff;
   }
+
   /* Typography */
   h1.top_title {
     font-size: var(--fs-60);
