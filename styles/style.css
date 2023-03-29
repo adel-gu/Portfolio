@@ -968,18 +968,18 @@ a.primary-btn {
 }
 
 .secondary-btn:hover,
-.secondary:focus {
+.secondary-btn:focus {
   background: none;
   color: var(--secondary-clr);
 }
 
 .secondary-btn:hover .phone-arrow,
-.secondary:focus .phone-arrow {
+.secondary-btn:focus .phone-arrow {
   display: inline;
 }
 
 .secondary-btn:hover .desktop-arrow,
-.secondary:focus .desktop-arrow {
+.secondary-btn:focus .desktop-arrow {
   display: none;
 }
 
