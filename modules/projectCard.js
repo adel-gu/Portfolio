@@ -130,21 +130,21 @@ function createModal(id) {
               &#x2716
             </button>
           </div>
-          <ul role="list" data-id="${projects[id].id}" class="modal__header_bottom features-container flex">
-          </ul>
         </div>
         <div class="modal__body">
           <div class="modal__body_slide">
             <div class="slide_main">
-
               <div class="slide_show">
                 <img src="${projects[id].image}" />
               </div>
-
             </div>
           </div>
           <div class="modal__body_wrapper">
+            <h4 style="color: #1a2236">Tech Stack</h4>
+            <ul role="list" data-id="${projects[id].id}" class="modal__header_bottom features-container flex">
+            </ul>
             <div class="modal__body_description">
+              <h4 style="color: #1a2236">Description</h4>
               <p>${projects[id].description}</p>
             </div>
             <div class="modal__body_buttons flex direction">
@@ -175,6 +175,4 @@ function createModal(id) {
   });
 }
 
-export {
-  projects, projectTemplate, setProjectSkills, createModal,
-};
+export { projects, projectTemplate, setProjectSkills, createModal };

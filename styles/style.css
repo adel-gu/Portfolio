@@ -260,12 +260,15 @@ label {
   top: 0;
   width: 100%;
   height: 100vh;
+  display: flex;
+  justify-content: center;
 }
 
 .modal {
+  display: flex;
+  flex-direction: column;
   margin-inline: auto;
   background: var(--secondary-clr);
-  height: 100vh;
   width: 100%;
   overflow-y: scroll;
   overflow-x: hidden;
@@ -307,7 +310,7 @@ label {
 
 .features-container {
   gap: 0.5em;
-  padding: 1em 0 1.25em 0;
+  padding-bottom: 1.25em;
   flex-wrap: wrap;
 }
 
@@ -363,12 +366,16 @@ label {
 }
 
 .modal__body_description {
-  padding-block: 2em;
+  padding-bottom: 2em;
+}
+
+.modal__body_buttons{
+  gap: 15px;
+  padding-bottom: 15px;
 }
 
 .modal__body_buttons a {
   border: 2px solid var(--primary-clr);
-  margin-bottom: 2em;
   flex: 1;
   color: var(--primary-clr);
 }
@@ -555,7 +562,7 @@ a.primary-btn {
 
   /* modal */
   .modal {
-    height: 80vh;
+    height: 100vh;
   }
 
   .modal__header_title {
@@ -568,10 +575,26 @@ a.primary-btn {
     font-size: var(--fs-40);
   }
 
+  .modal__body {
+    margin-top: 3.5em;
+    display: flex;
+    gap: 20px;
+  }
+
+  .modal__body_slide {
+    flex-basis: 55%;
+  }
+
+  .modal__body_wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-basis: 45%;
+  }
+
   .modal__body_buttons.direction {
     width: 50%;
-    flex-direction: row;
-    gap: 20px;
+    gap: 15px;
   }
 
   .modal__footer {
@@ -581,7 +604,7 @@ a.primary-btn {
 
   .overlay {
     max-width: 100%;
-    padding: 4.375em;
+    padding: 0;
     margin-inline: auto;
     z-index: 100;
   }
