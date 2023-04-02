@@ -65,6 +65,7 @@ ul[role="list"] {
 
 img {
   width: 100%;
+  display:block;
 }
 
 button img,

@@ -92,7 +92,7 @@ const projectTemplate = (project) => `
     <li class="${project.class} pos-relative flex direction">
       <div class="project-card pos-relative">
         <div class="project-img">
-          <img src=${project.image} />
+          <img src=${project.image} alt="${project.title} screenshot"/>
         </div>
         <div
           class="container project-details pos-absolute bottom-pos show-on-hover"
@@ -135,7 +135,7 @@ function createModal(id) {
           <div class="modal__body_slide">
             <div class="slide_main">
               <div class="slide_show">
-                <img src="${projects[id].image}" />
+                <img src="${projects[id].image}" alt="${projects[id].title} screenshot"/>
               </div>
             </div>
           </div>
