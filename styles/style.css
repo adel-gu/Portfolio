@@ -65,7 +65,7 @@ ul[role="list"] {
 
 img {
   width: 100%;
-  display:block;
+  display: block;
 }
 
 button img,
@@ -613,6 +613,10 @@ a.primary-btn {
 
 /* Large tablet and laptop */
 @media screen and (min-width: 1024px) {
+  div.section {
+    padding: 0;
+  }
+
   #hero-section {
     padding-top: 6.5em;
   }
