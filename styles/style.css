@@ -614,7 +614,7 @@ a.primary-btn {
 /* Large tablet and laptop */
 @media screen and (min-width: 1024px) {
   div.section {
-    padding: 0;
+    padding-block: 0;
   }
 
   #hero-section {
