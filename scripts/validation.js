@@ -1,20 +1,17 @@
-const form = document.forms[1];
-const { email } = form;
-const msg = form.querySelector('.msg');
+const collabBtns = document.querySelectorAll('.primary-btn[type="submit"]');
 
-function validator(e) {
-  e.preventDefault();
-
-  if (email.value === email.value.toLowerCase()) {
-    msg.textContent = 'Valid Email ✔';
+collabBtns.forEach((btn) =>
+  btn.addEventListener('click', () => {
+    navigator.clipboard.writeText('adeelguitoun@gmail.com');
+    const msgClass = `.msg-${btn.getAttribute('id')}`;
+    const msg = document.querySelector(msgClass);
     msg.classList.add('success');
-    msg.classList.remove('fail');
-    form.submit();
-  } else {
-    msg.innerHTML = '<strong>Required *:</strong> your Email must be in LowerCase Only ❌';
-    msg.classList.remove('success');
-    msg.classList.add('fail');
-  }
-}
+    console.log('MSG: ', msg);
+    msg.innerHTML = 'Email Copied to clipboard';
 
-form.addEventListener('submit', validator);
+    setTimeout(() => {
+      msg.innerHTML = '';
+      msg.classList.remove('success');
+    }, 1000);
+  }),
+);
